@@ -1,0 +1,52 @@
+/* 1rem = 16px */
+.banner_img {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media screen {
+    
+    
+}
+.banner_title {
+    position: absolute;
+    top: 156px;
+    left: 132px;
+}
+
+.banner_title,h2 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.nav_position {
+    position: absolute;
+    top: 276px;
+    right: 104px;
+}
+
+.navItem {
+    font-size: 2.25rem;
+    padding: 1.5rem;
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+}
+
+.navItemActive {
+    font-size: 2.25rem;
+    padding: 1.5rem;
+    color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem:hover {
+    font-size: 2.25rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(178, 155, 199);
+}
+

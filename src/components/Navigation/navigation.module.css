@@ -1,0 +1,16 @@
+.navItem {
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem:hover {
+    color: blueviolet;
+}
+
+.navItemActive {
+    color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
