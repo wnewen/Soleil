@@ -1,0 +1,14 @@
+.header_box {
+    background-color: #29231F;
+    color: #A8B7CA;
+    display: flex;
+
+}
+.icon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.navItemActive {
+    color: #C8D7EB;
+}
