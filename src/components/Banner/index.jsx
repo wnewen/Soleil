@@ -4,13 +4,26 @@ import { NavLink } from "react-router-dom";
 function Banner() {
     return (
         <div>
-            <img className={styles.banner_img} src="./images/banner.jpg" />
-            <span className={styles.banner_title}>
-                <h2 >le soleil</h2>
-                <h2 >et la lune</h2>
-            </span>
+            <img className={styles.banner_img} src="./images/banner.png" />
 
-            {/* <div className={styles.nav_position}>
+            <div className={styles.header_position}>
+                <span className={styles.header}>
+                    <a><img className={styles.icon} src="./images/icon_soleil.png" /></a>
+                    <span className={styles.icon_right}>
+                        <a><img className={styles.icon} src="./images/icon_bag.png" /></a>
+                        <a><img className={styles.icon} src="./images/icon_login.png" /></a>
+                    </span>
+                </span>
+            </div>
+            
+            <div className={styles.banner_title}>
+                <h2 >Le soleil</h2>
+                <h2 className={styles.banner_title_tab1}>Et</h2>
+                <h2 className={styles.banner_title_tab2}>La lune</h2>
+                <h6 className={styles.banner_text_tab2}>The beauty of details</h6>
+            </div>
+            
+            <div className={styles.nav_position}>
             <NavLink to="/category/:categoryName" 
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 news
@@ -31,7 +44,7 @@ function Banner() {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 tools
             </NavLink>
-        </div> */}
+        </div>
 
         </div>
     );

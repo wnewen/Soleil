@@ -5,48 +5,86 @@
     width: 100%;
 }
 
-@media screen {
-    
-    
-}
-.banner_title {
-    position: absolute;
-    top: 156px;
-    left: 132px;
-}
-
-.banner_title,h2 {
-    font-size: 6rem;
-    margin: 0;
-}
-
-.nav_position {
-    position: absolute;
-    top: 276px;
-    right: 104px;
-}
-
-.navItem {
-    font-size: 2.25rem;
-    padding: 1.5rem;
-    color: burlywood;
+.header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 1600px) {
+    
+    
+}
+
+@media (min-width: 1280px) {
+    .header_position {
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+    }
+
+    .icon {
+        padding-left: 1rem;
+    }
+
+    .banner_title {
+        font-family: 'Cormorant Garamond', serif;
+        position: absolute;
+        top: 12.5rem;
+        left: 22.5rem;
+    }
+    
+    .banner_title,h2 {
+        text-align: left;
+        font-size: 6rem;
+        margin: 0;
+    }
+    
+    .banner_title_tab1 {
+        position: relative;
+        left: 4rem;
+    }
+    
+    .banner_title_tab2 {
+        position: relative;
+        left: 8rem;
+    }
+    
+    .banner_text_tab2 {
+        position: relative;
+        left: 8rem;
+        margin: 0;
+        font-family:'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    
+    .nav_position {
+        position: absolute;
+        top: 20rem;
+        right: 10rem;
+    }
+    
+    .navItem {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 2rem;
+        padding: 2rem;
+        color: #412613;
+    }   
+}
+
+.icon:hover {
+    color: #8a6243;
 }
 
 .navItemActive {
-    font-size: 2.25rem;
-    padding: 1.5rem;
-    color: pink;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .navItem:hover {
-    font-size: 2.25rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    color: rgb(178, 155, 199);
-}
+    color: #8a6243;
+} 
+
+
 

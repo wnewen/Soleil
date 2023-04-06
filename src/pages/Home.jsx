@@ -7,7 +7,6 @@ function Home() {
     return(
         <div>
             <Banner className="layoutHeader"/>
-            <Navigation className="nav" />
         </div>
     ) ;
 }
