@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./footer.module.css"
 
 function Footer() {
@@ -16,10 +17,12 @@ function Footer() {
             </div>
 
             <div className={styles.footer_box}>
-                <h6>We are committed to making every girl who loves lifeeasy to become beautiful</h6>
-                <span>
-                    
-                </span>
+                <h6 className={styles.footer_content}>We are committed to making every girl who loves lifeeasy to become beautiful</h6>
+                <div className={styles.icon_box}>
+                    <NavLink to="https://instagram.com/lumiere_nails_?igshid=YmMyMTA2M2Y="><img className={styles.icon} src="./images/icon_instagram.svg" /></NavLink>
+                    <NavLink to="https://instagram.com/lumiere_nails_?igshid=YmMyMTA2M2Y=" ><img className={styles.icon} src="./images/icon_twitter.svg" /></NavLink>
+                    <NavLink to="https://instagram.com/lumiere_nails_?igshid=YmMyMTA2M2Y=" ><img className={styles.icon} src="./images/icon_facebook.svg" /></NavLink>
+                </div>
                 <h6>@ 2023 SOLEIL</h6>
             </div>
             

@@ -5,7 +5,7 @@ h4,h6 {
     display: flex;
     justify-content: space-around;
     background-color: #8592A2;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
     text-align: left;
 }
 
@@ -27,5 +27,27 @@ h4,h6 {
 }
 
 .footer_box {
+    /* padding: 4rem 4rem; */
     height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 5rem;
+}
+
+.icon_box {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.icon {
+    width:4.5rem;
+    height: 4.5rem;
+    margin: 1rem;
 }
