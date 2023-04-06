@@ -1,0 +1,31 @@
+h4,h6 {
+    margin: 0.5rem;
+}
+.contact_box {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8592A2;
+    padding: 4rem 0;
+    text-align: left;
+}
+
+.contact_title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contact_img {
+    width: 12rem;
+    height: 10rem;
+}
+
+.footer_box {
+    height: 28rem;
+}
