@@ -10,8 +10,8 @@ function Banner() {
                 <span className={styles.header}>
                     <NavLink to="./"><img className={styles.icon} src="./images/icon_soleil.png" /></NavLink>
                     <span className={styles.icon_right}>
-                        <NavLink to="./"><img className={styles.icon} src="./images/icon_bag.png" /></NavLink>
-                        <NavLink to="./"><img className={styles.icon} src="./images/icon_login.png" /></NavLink>
+                        <NavLink to="./"><img className={styles.icon} src="./images/icon_bag.svg" /></NavLink>
+                        <NavLink to="./"><img className={styles.icon} src="./images/icon_login.svg" /></NavLink>
                     </span>
                 </span>
             </div>
