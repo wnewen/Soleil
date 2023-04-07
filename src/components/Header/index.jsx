@@ -5,9 +5,9 @@ function Header() {
     return (
         <div className={styles.header_box}>
 
-            <NavLink to="/"><img className={styles.icon} src="./images/icon_soleil.svg" /></NavLink>
+            <NavLink to="/"><img className={styles.icon} src="../images/icon_soleil.svg" /></NavLink>
             
-            <div className={styles.nav_position}>
+            <div className={styles.nav_Box}>
                 <NavLink to="/category/:categoryName"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     news
@@ -31,8 +31,8 @@ function Header() {
             </div>
 
             <div>
-                <NavLink to="/"><img className={styles.icon} src="./images/icon_bag.svg" /></NavLink>
-                <NavLink to="/"><img className={styles.icon} src="./images/icon_login.svg" /></NavLink>
+                <NavLink to="/"><img className={styles.icon} src="../images/icon_bag.svg" /></NavLink>
+                <NavLink to="/"><img className={styles.icon} src="../images/icon_login.svg" /></NavLink>
             </div>
 
         </div>

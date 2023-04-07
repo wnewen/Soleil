@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Banner() {
     return (
         <div>
-            <img className={styles.banner_img} src="./images/banner.svg" />
+            <img className={styles.banner_img} src="./images/Banner.svg" />
 
             <div className={styles.header_position}>
                 <span className={styles.header}>

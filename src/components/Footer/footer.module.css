@@ -7,6 +7,7 @@ h4,h6 {
     background-color: #8592A2;
     /* padding: 4rem 0; */
     text-align: left;
+    padding: 4rem 0;
 }
 
 .contact_title {
@@ -50,4 +51,8 @@ h4,h6 {
     width:4.5rem;
     height: 4.5rem;
     margin: 1rem;
+}
+
+.icon:hover {
+    filter: invert(0.3) saturate(0.8);
 }

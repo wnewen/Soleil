@@ -2,13 +2,42 @@
     background-color: #29231F;
     color: #A8B7CA;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 .icon {
     width: 3.5rem;
     height: 3.5rem;
+    margin: 1rem;
+    filter: invert(0.73) saturate(0.24) hue-rotate(188deg);
 }
 
+.icon:hover {
+    filter: invert(1) saturate(0.24) hue-rotate(188deg);
+}
+
+.nav_Box {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navItem {
+    color: #A8B7CA;
+    margin: 1rem;
+}
+
+.navItem:hover {
+    color: #8a6243;
+}  
+
 .navItemActive {
+    /* color: #C8D7EB; */
+    color: #A8B7CA;
+    margin: 1rem;
+}
+
+.navItemActive:hover {
     color: #C8D7EB;
 }

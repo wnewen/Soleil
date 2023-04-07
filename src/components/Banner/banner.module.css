@@ -16,6 +16,8 @@
 }
 
 @media (min-width: 1280px) {
+
+}
     .header_position {
         width: 100%;
         position: absolute;
@@ -73,10 +75,10 @@
         padding: 2rem;
         color: #412613;
     }   
-}
+
 
 .icon:hover {
-    color: #8a6243;
+    fill: invert(0.73) sepia(0) saturate(0.24);
 }
 
 .navItemActive {
