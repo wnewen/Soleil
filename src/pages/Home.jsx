@@ -8,6 +8,7 @@ import Header from '../components/Header';
 function Home() {
     return(
         <div>
+            <Helmet><title>Home</title></Helmet>
             <Banner className="layoutHeader"/>
             <Footer />
         </div>
