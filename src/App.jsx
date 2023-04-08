@@ -17,8 +17,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="category/:categoryName" element={<Category />} />
-          <Route path="products/id/:productID" eleElement={<Product />} />
+          <Route path="products">
+            <Route path="category/:categoryName" element={<Category />} />
+            <Route path="id/:productID" element={<Product />} />
+          </Route>
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

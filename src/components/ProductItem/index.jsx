@@ -8,12 +8,13 @@ function ProductItem( { product } ) {
     return(
         <div className={styles.product_box}>
             <div >
-                <Link to={`products/id/${product.id}`}><img src={product.image} /></Link>
+                <Link to={`/products/id/${product.id}`}><img src={product.image} /></Link>
                 <h3>{product.name}</h3>
                 <h4>{product.price}$</h4>
                 <ButtonATB />
             </div>
         </div>
+        
     );
 }
 

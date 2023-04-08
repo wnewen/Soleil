@@ -6,10 +6,12 @@ import Footer from '../components/Footer';
 import products from "../json/products.json";
 
 function Product() {
-    // const { productId } = useParams();
-    // const product = products.find(
-    //     (x) => x.id === productId
-    // );
+    const { productId } = useParams();
+    const product = products.find(
+        (x) => x.id === productId
+    );
+    console.log(productId);
+    console.log(product);
 
     return(
         <div>

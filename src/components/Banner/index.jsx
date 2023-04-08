@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Banner() {
     return (
         <div>
-            <img className={styles.banner_img} src="./images/banner.svg" />
+            <img className={styles.banner_img} src="../images/banner.svg" />
 
             <div className={styles.header_position}>
                 <span className={styles.header}>
@@ -28,19 +28,19 @@ function Banner() {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 news
             </NavLink >
-            <NavLink to="/category/manicure"
+            <NavLink to="/products/category/manicure"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 manicure
             </NavLink>
-            <NavLink to="/category/handCream"
+            <NavLink to="/products/category/handCream"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 hand cream
             </NavLink>
-            <NavLink to="/category/accessories"
+            <NavLink to="/products/category/accessories"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 accessories
             </NavLink>
-            <NavLink to="/category/tools"
+            <NavLink to="/products/category/tools"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 tools
             </NavLink>
