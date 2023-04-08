@@ -17,9 +17,9 @@ function Product() {
         <div>
             <Helmet><title>product</title></Helmet>
             <Header />
-            {/* <ProductDetail 
+            <ProductDetail 
                 product={product}
-            /> */}
+            />
             <Footer />
         </div>
     ) ;
