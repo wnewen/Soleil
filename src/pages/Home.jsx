@@ -13,6 +13,7 @@ import Tools from '../components/Tools';
 function Home() {
     return(
         <div>
+            <Helmet><title>Home</title></Helmet>
             <Banner className="layoutHeader"/>
             <News/>
             <Manicure/>

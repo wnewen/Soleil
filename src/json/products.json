@@ -37,7 +37,7 @@
     },
     {
       "id": "4",
-      "category": "hand cream",
+      "category": "handcream",
       "name": "BERGASANDAL",
       "sku": "sku_313358",
       "price": 25,
@@ -49,7 +49,7 @@
     },
     {
       "id": "5",
-      "category": "hand cream",
+      "category": "handcream",
       "name": "LALE",
       "sku": "sku_622147",
       "price": 25,
@@ -61,7 +61,7 @@
     },
     {
       "id": "6",
-      "category": "hand cream",
+      "category": "handcream",
       "name": "CHAMO",
       "sku": "sku_622146",
       "price": 25,

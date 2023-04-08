@@ -6,19 +6,22 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Category from './pages/Category'
 import Product from './pages/Product'
+import { HelmetProvider } from 'react-helmet-async'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="category/:categoryName" element={<Category />} />
-        <Route path="id/:productID" eleElement={<Product />} />
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider context={{}}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="category/:categoryName" element={<Category />} />
+          <Route path="products/id/:productID" eleElement={<Product />} />
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   )
 }
 
