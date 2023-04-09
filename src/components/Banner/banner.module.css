@@ -1,23 +1,94 @@
 /* 1rem = 16px */
-.banner_img {
-    display: grid;
-    gap: 1rem;
-    width: 100%;
+    .banner_img {
+        display: block;
+        width: 100%;
+        height: auto;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
+    .header {
+        display: flex;
+        justify-content: space-between;
 }
 
-@media (min-width: 1600px) {
+
+@media (min-width: 390px) {
     
+}
+@media (min-width: 760px) {
     
+}
+@media (min-width: 1280px) {
+   
 }
 
 @media (min-width: 1280px) {
 
 }
+    .container {
+        position: relative;
+        width: 100%;
+    
+}
+    .row{
+        display: flex;
+        flex-direction: row;
+}
+    .t1{
+       
+        position: absolute;
+        top: -280%; /* 將文字垂直置中 */
+        left: 20%; /* 將文字水平置中 */
+        transform: translate(20%, -50%); /* 將文字置中 */
+        font-size: 1em;
+        color: white;
+       
+  }
+    .t2{
+       
+    position: absolute;
+    top: -280%; /* 將文字垂直置中 */
+    left: 20%; /* 將文字水平置中 */
+    transform: translate(20%, -50%); /* 將文字置中 */
+    font-size: 1em;
+    color: white;
+    margin-left: 8rem;
+    margin-top: -2px;
+   
+}
+    .t3{
+       
+        position: absolute;
+        top: -300%; /* 將文字垂直置中 */
+        left: 20%; /* 將文字水平置中 */
+        transform: translate(20%, -50%); /* 將文字置中 */
+        font-size: 1em;
+        color: white;
+   
+}
+    .t4{
+        
+        position: absolute;
+        top: -250%; /* 將文字垂直置中 */
+        left: 20%; /* 將文字水平置中 */
+        transform: translate(20%, -50%); /* 將文字置中 */
+        font-size: 1em;
+        color: white;
+   
+}
+    .t5{
+       
+        position: absolute;
+        top: -280%; /* 將文字垂直置中 */
+        left: 20%; /* 將文字水平置中 */
+        transform: translate(20%, -50%); /* 將文字置中 */
+        font-size: 1em;
+        color: white;
+   
+}
+     h3{
+        margin-left: 2rem;
+    }
+
     .header_position {
         width: 100%;
         position: absolute;

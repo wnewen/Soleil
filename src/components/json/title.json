@@ -1,0 +1,22 @@
+[
+    {
+        "id":"01",
+        "catergory":"News"
+    },
+    {
+        "id":"02",
+        "catergory":"Manicure"
+    },
+    {
+        "id":"03",
+        "catergory":"Handcream"
+    },
+    {
+        "id":"04",
+        "catergory":"Accessories"
+    },
+    {
+        "id":"05",
+        "catergory":"Tools"
+    }
+]

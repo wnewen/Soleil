@@ -1,15 +1,19 @@
 import styles from"./news.module.css"
+import TitleItem from "../TitleItem"
+import title from "../json/title.json"
 
 function News(){
     return(
         <div className={styles.news_box}>
-            <div className={styles.title}>
-            <h1 className={styles.title1}>01</h1>
-            <h1 className={styles.title2}>News</h1>
-            </div>
+            <TitleItem
+                title1={title[0].id}
+                title2={title[0].catergory}
+                product="news"
+            />
             <div>
             <p>“The beautiful thing about learning is nobody can take it away from you.”
                 — B.B. King, Musician</p>
+                
             </div>
             
             <img className={styles.news_img} src="./images/img_news.svg"/>

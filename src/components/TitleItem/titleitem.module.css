@@ -1,28 +1,21 @@
-.news_box{
-    background-color: #EFEDE9;
-    color: #412613;
-    display: flex;
-    flex-direction: column ;
-    justify-content: flex-start;
-}
-.news_img{
-    
-    margin:0em;
-}
-.title{
+.box {
     font-family: 'Cormorant Garamond', serif;
     display: flex;
     flex-direction: row;
-    
+  
+}
+.title{
+    color: #412613;
 }
 
+
 @media (max-width: 390px) {
-    .title1{
+    p1{
         font-size: 4em;
         margin: 0em;
         margin-left: 0.6em;
     }
-    .title2{
+    p2{
         font-size: 3em;
         margin: 0em;
         padding-top: 0.3em;
@@ -30,12 +23,12 @@
     }
 }
 @media (min-width: 390px) {
-    .title1{
+    p1{
         font-size: 5.5em;
         margin: 0em;
         margin-left: 0.6em;
     }
-    .title2{
+    p2{
         font-size: 4.5em;
         margin: 0em;
         padding-top: 0.2em;
@@ -43,12 +36,12 @@
     }
 }
 @media (min-width: 760px) {
-    .title1{
+    p1{
         font-size: 5.5em;
         margin: 0em;
         margin-left: 0.6em;
     }
-    .title2{
+    p2{
         font-size: 4.5em;
         margin: 0em;
         padding-top: 0.2em;
@@ -56,12 +49,12 @@
     }
 }
 @media (min-width: 1280px) {
-    .title1{
+    p1{
         font-size: 8em;
         margin: 0em;
         margin-left: 0.8em;
     }
-    .title2{
+    p2{
         font-size: 6em;
         margin: 0em;
         padding-top: 0.3em;
