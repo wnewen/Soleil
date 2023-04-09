@@ -99,6 +99,10 @@
         padding-left: 1rem;
     }
 
+    .icon_right {
+        display: flex;
+    }
+
     .banner_title {
         font-family: 'Cormorant Garamond', serif;
         position: absolute;

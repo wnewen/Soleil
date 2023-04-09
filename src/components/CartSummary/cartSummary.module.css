@@ -1,0 +1,5 @@
+.icon {
+    filter: invert(0.73) saturate(0.24) hue-rotate(188deg);
+    width: 3.5rem;
+    height: 3.5rem;
+}

@@ -7,24 +7,29 @@ import Home from './pages/Home'
 import Category from './pages/Category'
 import Product from './pages/Product'
 import { HelmetProvider } from 'react-helmet-async'
+// import { darkTheme, lightTheme } from './theme';
+import { Provider } from 'react-redux'
+import store from './redux/store';
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <HelmetProvider context={{}}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="products">
-            <Route path="category/:categoryName" element={<Category />} />
-            <Route path="id/:productId" element={<Product />} />
-          </Route>
+    <Provider store={store}>
+      <HelmetProvider context={{}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="products">
+              <Route path="category/:categoryName" element={<Category />} />
+              <Route path="id/:productId" element={<Product />} />
+            </Route>
 
-        </Routes>
-      </BrowserRouter>
-    </HelmetProvider>
+          </Routes>
+        </BrowserRouter>
+      </HelmetProvider>
+    </Provider>
   )
 }
 

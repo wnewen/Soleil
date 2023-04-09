@@ -41,3 +41,8 @@
 .navItemActive:hover {
     color: #C8D7EB;
 }
+
+.header_right_box {
+    display: flex;
+    align-items: center;
+}

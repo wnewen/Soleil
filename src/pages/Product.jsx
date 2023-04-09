@@ -10,8 +10,6 @@ function Product() {
     const product = products.find(
         (x) => x.id === productId
     );
-    console.log(productId);
-    console.log(product);
 
     return(
         <div>
