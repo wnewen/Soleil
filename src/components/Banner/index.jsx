@@ -1,8 +1,11 @@
 import styles from "./banner.module.css"
 import { NavLink } from "react-router-dom";
 import CartSummary from "../CartSummary";
+import { useState } from "react";
 
 function Banner() {
+    const [isOnTouch, setIsOnTouch] = useState(false);
+
     return (
         <div>
             <img className={styles.banner_img} src="../images/banner.svg" />
