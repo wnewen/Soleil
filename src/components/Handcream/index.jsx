@@ -1,12 +1,16 @@
 import styles from"./handcream.module.css"
+import TitleItem from "../TitleItem"
+import title from "../json/title.json"
+
 
 function Handcream(){
     return(
         <div className={styles.handc_box}>
-            <div className={styles.title}>
-            <h1 className={styles.title1}>03</h1>
-            <h1 className={styles.title2}>Handcream</h1>
-            </div>
+              <TitleItem
+                title1={title[2].id}
+                title2={title[2].catergory}
+                product="handcream"
+            />
             
             <img className={styles.news_img} src="./images/img_handCream.svg"/>
             <p>Tamburins</p>

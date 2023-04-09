@@ -1,12 +1,16 @@
 import styles from"./accessories.module.css"
+import TitleItem from "../TitleItem"
+import title from "../json/title.json"
+
 
 function Accessories(){
     return(
         <div className={styles.acce_box}>
-        <div className={styles.title}>
-        <h1 className={styles.title1}>03</h1>
-        <h1 className={styles.title2}>Handcream</h1>
-        </div>
+          <TitleItem
+                title1={title[3].id}
+                title2={title[3].catergory}
+                product="accessories"
+            />
         
         <img className={styles.news_img} src="./images/img_accessories.svg"/>
         <p>Tamburins</p>

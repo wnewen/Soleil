@@ -1,12 +1,16 @@
 import styles from"./tools.module.css"
+import TitleItem from "../TitleItem"
+import title from "../json/title.json"
+
 
 function Tools(){
     return(
         <div className={styles.tools_box}>
-            <div className={styles.news_title}>
-            <h1 className={styles.news_title1}>01</h1>
-            <h1 className={styles.news_title2}>News</h1>
-            </div>
+              <TitleItem
+                title1={title[4].id}
+                title2={title[4].catergory}
+                product="tools"
+            />
             <div>
             <p>“The beautiful thing about learning is nobody can take it away from you.”
                 — B.B. King, Musician</p>
