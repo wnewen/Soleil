@@ -1,5 +1,6 @@
 import styles from "./banner.module.css"
 import { NavLink } from "react-router-dom";
+import CartSummary from "../CartSummary";
 
 function Banner() {
     return (
@@ -10,7 +11,8 @@ function Banner() {
                 <span className={styles.header}>
                     <NavLink to="./"><img className={styles.icon} src="./images/icon_soleil.png" /></NavLink>
                     <span className={styles.icon_right}>
-                        <NavLink to="./"><img className={styles.icon} src="./images/icon_bag.svg" /></NavLink>
+                        {/* <NavLink to="./"><img className={styles.icon} src="./images/icon_bag.svg" /></NavLink> */}
+                        <NavLink to="./"><CartSummary size={70} color="#412613"/></NavLink>
                         <NavLink to="./"><img className={styles.icon} src="./images/icon_login.svg" /></NavLink>
                     </span>
                 </span>

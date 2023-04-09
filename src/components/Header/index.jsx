@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./header.module.css"
+import CartSummary from "../CartSummary";
 
 function Header() {
     return (
@@ -30,8 +31,9 @@ function Header() {
                 </NavLink>
             </div>
 
-            <div>
-                <NavLink to="/"><img className={styles.icon} src="/images/icon_bag.svg" /></NavLink>
+            <div className={styles.header_right_box}>
+                {/* <NavLink to="/"><img className={styles.icon} src="/images/icon_bag.svg" /></NavLink> */}
+                <NavLink to="/"><CartSummary size={56} color="#A8B7CA"/></NavLink>
                 <NavLink to="/"><img className={styles.icon} src="/images/icon_login.svg" /></NavLink>
             </div>
 
