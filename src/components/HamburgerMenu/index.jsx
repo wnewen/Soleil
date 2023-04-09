@@ -13,3 +13,5 @@ function HamburgerMenu({ onClick, isOnTouch }) {
        </span>
     );
 }
+
+export default HamburgerMenu;

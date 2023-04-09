@@ -4,7 +4,7 @@ import CartSummary from "../CartSummary";
 import { useState } from "react";
 
 function Banner() {
-    const [isOnTouch, setIsOnTouch] = useState(false);
+    // const [isOnTouch, setIsOnTouch] = useState(false);
 
     return (
         <div>
@@ -29,7 +29,7 @@ function Banner() {
             </div>
             
             <div className={styles.nav_position}>
-            <NavLink to="/category/news" 
+            <NavLink to="/news" 
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 news
             </NavLink >
