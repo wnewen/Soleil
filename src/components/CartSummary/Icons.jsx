@@ -11,7 +11,6 @@ export default function CartIcon({ size, color }) {
           <path id="svg_16" d="m19.87399,25.96641c0,0 28.99151,0 28.99151,0c0,0 8.8235,29.83184 8.8235,29.83184c0,0 -45.37801,0 -45.37801,0c0,0 7.563,-29.83184 7.563,-29.83184z" opacity="NaN" strokeWidth="2.5" stroke={color} fill="none"/>
          </g>
         </g>
-       
        </svg>
 
     )

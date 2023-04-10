@@ -13,7 +13,7 @@ function Header() {
                 onClick={() => setIsOnTouch(!isOnTouch)}
                 isOnTouch={isOnTouch}
             />
-            <NavLink to="/"><img className={styles.icon} src="/images/icon_soleil.svg" /></NavLink>
+            <NavLink to="/"><img className={styles.icon_soleiel} src="/images/icon_soleil.svg" /></NavLink>
             
             {/* <div className={styles.nav_Box}>
                 <NavLink to="/products/category/news"

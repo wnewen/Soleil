@@ -1,3 +1,7 @@
+.row {
+    width: 100%;
+}
+
 .ProductDetail_box {
     display: flex;
     justify-content: center;
@@ -12,6 +16,7 @@
 }
 
 .product_name {
+    margin-left: 0;
     font-size: 2rem;
     font-weight: 700;
 }
