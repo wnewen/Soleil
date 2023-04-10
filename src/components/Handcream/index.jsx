@@ -1,7 +1,7 @@
 import styles from"./handcream.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
-
+import { NavLink } from "react-router-dom";
 
 function Handcream(){
     return(

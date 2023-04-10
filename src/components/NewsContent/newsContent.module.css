@@ -21,7 +21,8 @@
 }
 .title3{
     font-family:'Montserrat';
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 .title31{
@@ -34,10 +35,17 @@
 .news_img{
     width: 100%;
 }
-
+.text_box{
+    margin-bottom: 5rem;
+    text-align: left;
+}
 .text1{
     font-family: 'Cormorant Garamond', serif;
+    margin-top: 3rem;
+    font-size: 36px;
 }
 .text2{
     font-family:'Montserrat';
+    font-size: 20px;
+    text-align:left;
 }
