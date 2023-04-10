@@ -23,7 +23,7 @@ function Footer() {
                     <NavLink to="https://instagram.com/lumiere_nails_?igshid=YmMyMTA2M2Y=" ><img className={styles.icon} src="/images/icon_twitter.svg" /></NavLink>
                     <NavLink to="https://instagram.com/lumiere_nails_?igshid=YmMyMTA2M2Y=" ><img className={styles.icon} src="/images/icon_facebook.svg" /></NavLink>
                 </div>
-                <h6>@ 2023 SOLEIL</h6>
+                <h6 className={styles.footer_bottom}>@ 2023 SOLEIL</h6>
             </div>
             
         </div>

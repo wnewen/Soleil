@@ -133,6 +133,12 @@
     h4,h6 {
         margin: 0.5rem;
     }
+
+    h6 {
+        font-size: 1.3rem;
+        line-height: normal;
+    }
+
     .contact_box {
         display: flex;
         justify-content: space-around;
@@ -187,5 +193,9 @@
     
     .icon:hover {
         filter: invert(0.3) saturate(0.8);
+    }
+
+    .footer_bottom {
+        font-size: 1rem;
     }
 }
