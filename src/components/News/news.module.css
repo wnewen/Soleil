@@ -7,44 +7,80 @@
   
 }
 .news_img{ 
-    margin:0em;
+    margin: 0em;
+    width: 100%;
 }
-.title{
-    font-family: 'Cormorant Garamond', serif;
-    display: flex;
-    flex-direction: row;
-}
+
 .content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: auto;
-}
-.saying{
-    font-family:'Montserrat';
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.newstitle{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
-    margin-bottom: 0%;
-}
-.date{
-    font-family:'Montserrat', sans-serif;
-    font-size: 1rem;
-   border-top: 2px solid #412613;
-   padding-top: 1.5rem;
-
+    width: 90%;
 }
 
-@media (max-width: 390px) {
+
+
+@media (min-width: 320px) {
+    .saying{
+        width: 100%;
+        font-family:'Montserrat';
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .newstitle{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 0.8rem;
+        text-align: left;
+        margin-bottom: 0%;
+    }
+    .date{
+        font-family:'Montserrat', sans-serif;
+        font-size: 0.5rem;
+       border-top: 1px solid #412613;
+       padding-top: 1.5rem;
     
+    }
 }
-@media (min-width: 760px) {
-  
+@media (min-width: 768px) {
+    .saying{
+        width: 100%;
+        font-family:'Montserrat';
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .newstitle{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 0%;
+    }
+    .date{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1rem;
+       border-top: 2px solid #412613;
+       padding-top: 1.5rem;
+    
+    }
 }
 @media (min-width: 1280px) {
+    .saying{
+        width: 100%;
+        font-family:'Montserrat';
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .newstitle{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.5rem;
+        margin-bottom: 0%;
+    }
+    .date{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1rem;
+       border-top: 2px solid #412613;
+       padding-top: 1.5rem;
     
+    }
 }
 

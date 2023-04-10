@@ -12,8 +12,13 @@
     margin-bottom: 10rem;
 }
 
+.img_box {
+    display: flex;
+    justify-content: center;
+}
+
 .row {
-    margin: 2rem 2rem;
+    width: 90%;
 }
 
 .news_img1{

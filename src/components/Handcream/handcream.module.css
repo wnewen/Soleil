@@ -21,11 +21,22 @@
     margin-top: 5rem;
     width: 100%;
 }
-.text{
-    margin-left: 10rem;
 
-}
 p{
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
+}
+
+@media (min-width: 320px) {
+    .text{
+        margin-left: 10%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .text{
+        margin-left: 10%;
+        font-size: 2rem;
+    }
 }

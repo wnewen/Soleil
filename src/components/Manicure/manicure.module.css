@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column ;
     padding-top: 5rem;
+    width: 90%;
 }
 .title{
     font-family: 'Cormorant Garamond', serif;
@@ -15,39 +16,99 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 90%;
 }
 .lumiere{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.text1{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
-}
-.text2{
-    font-family:'Montserrat', sans-serif;
-    font-size: 1.2rem;
-}
+
 .ohora{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.p1{
+/* .p1{
     display: flex;
    flex-direction: column;
    align-items: flex-start;
-}
+} */
 .lumiere_text{
     display: flex;
    flex-direction: column;
    align-items: flex-start;
-    margin-left: 15rem;
+   text-align: left;
+   width: 60%;
+   height: 50%;
+   margin-bottom: 20%
+    /* margin-left: 15rem; */
 }
 .ohora_text{
-    margin-right: 15rem;
+    /* margin-right: 15rem; */
+    
     display: flex;
    flex-direction: column;
    align-items: flex-start;
+   width: 60%;
+   height: 50%;
+   margin-top: 20%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 60%;
+}
+
+p {
+    margin: 0;
+}
+
+@media (min-width: 320px) {
+    .text1{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+    .text2{
+        font-family:'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .text1{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem;
+        
+    }
+    .text2{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text1{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.5rem;
+    }
+    .text2{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-align: left;
+    }
 }

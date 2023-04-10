@@ -1,46 +1,42 @@
 /* 1rem = 16px */
-    .banner_img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-top:0%
-       
-}
-    .content{
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translate(0%, -50%);
-        text-align: center;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
+.banner_img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0%
 }
 
+.content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
 
-@media (min-width: 390px) {
-    
+.header {
+    display: flex;
+    justify-content: space-between;
 }
-@media (min-width: 760px) {
-    
-}
+
+
+@media (min-width: 390px) {}
+
+@media (min-width: 760px) {}
+
 @media (min-width: 1280px) {
-   
-}
-
     .container {
         position: relative;
         width: 100%;
-    
-}
-    .row{
+
+    }
+
+    .row {
         display: flex;
         flex-direction: row;
-}
- 
-     h3{
+    }
+
+    h3 {
         margin-left: 10rem;
     }
 
@@ -67,55 +63,58 @@
         top: -40rem;
         left: -20rem;
         padding-top: 0;
-        
+
 
     }
-    .t1{
+
+    .t1 {
         margin-top: 0%;
     }
-    .t2{
-        width:50%;
+
+    .t2 {
+        width: 50%;
         height: auto;
         padding-top: 2rem;
         padding-right: 2rem;
         margin-top: 0%;
     }
-    
-    .banner_title,h2 {
+
+    /* .banner_title,
+    h2 {
         text-align: left;
         display: flex;
         font-size: 6rem;
         margin: 0;
         flex-direction: column;
     }
-    
+
     .banner_title_tab1 {
         position: relative;
         left: 4rem;
     }
-    
+
     .banner_title_tab2 {
         position: relative;
         left: 8rem;
     }
-    
+
     .banner_text_tab2 {
         position: relative;
         left: 8rem;
         margin: 0;
-        font-family:'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         text-align: left;
         font-size: 1.5rem;
         font-weight: 300;
-    }
-    
+    } */
+
     .nav_position {
         position: absolute;
         top: -45rem;
         right: -35rem;
-        
+
     }
-    
+
     .navItem {
         display: flex;
         flex-direction: column;
@@ -123,7 +122,117 @@
         font-size: 2rem;
         padding: 2rem;
         color: #412613;
-    }   
+    }
+
+
+    .icon:hover {
+        fill: invert(0.73) sepia(0) saturate(0.24);
+    }
+
+
+    .navItem:hover {
+        color: #8a6243;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    margin-left: 10rem;
+}
+
+.header_position {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+}
+
+.icon {
+    padding-left: 1rem;
+    margin-top: 0%;
+}
+
+.icon_right {
+    display: flex;
+}
+
+.banner_title {
+    font-family: 'Cormorant Garamond', serif;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    top: -40rem;
+    left: -20rem;
+    padding-top: 0;
+
+
+}
+
+.t1 {
+    margin-top: 0%;
+}
+
+.t2 {
+    width: 50%;
+    height: auto;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    margin-top: 0%;
+}
+
+.banner_title,
+h2 {
+    text-align: left;
+    display: flex;
+    font-size: 6rem;
+    margin: 0;
+    flex-direction: column;
+}
+
+.banner_title_tab1 {
+    position: relative;
+    left: 4rem;
+}
+
+.banner_title_tab2 {
+    position: relative;
+    left: 8rem;
+}
+
+.banner_text_tab2 {
+    position: relative;
+    left: 8rem;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.nav_position {
+    position: absolute;
+    top: -45rem;
+    right: -35rem;
+
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #412613;
+}
 
 
 .icon:hover {
@@ -133,7 +242,4 @@
 
 .navItem:hover {
     color: #8a6243;
-} 
-
-
-
+}
