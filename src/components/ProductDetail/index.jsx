@@ -18,7 +18,7 @@ function ProductDetail({ product }) {
     var price = product.price*qty;
     return (
         <div className={styles.ProductDetail_box}>
-            <Row gutter={[48, 32]}>
+            <Row gutter={[48, 32]} className={styles.row}>
                 <Col
                     xs={{ span: 24 }}
                     lg={{ span: 12 }}

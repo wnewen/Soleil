@@ -1,58 +1,201 @@
-h4,h6 {
-    margin: 0.5rem;
-}
-.contact_box {
-    display: flex;
-    justify-content: space-around;
-    background-color: #8592A2;
-    /* padding: 4rem 0; */
-    text-align: left;
-    padding: 4rem 0;
+/*320*/
+@media (min-width: 320px) {
+    h4,h6 {
+        margin: 0.5rem;
+    }
+
+    h6 {
+        font-size: 0.1rem;
+    }
+
+    .contact_box {
+        display: flex;
+        justify-content: space-around;
+        background-color: #8592A2;
+        text-align: left;
+        padding: 2rem 2rem;
+    }
+    
+    .contact_title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact_text {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 0.8rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .contact_img {
+        width: 4rem;
+        height: 3rem;
+    }
+    
+    .footer_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_content {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 3rem 2rem 1rem;
+    }
+    
+    .icon_box {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .icon {
+        width:2.5rem;
+        height: 2.5rem;
+        margin: 0.5rem;
+    }
+    
+    .icon:hover {
+        filter: invert(0.3) saturate(0.8);
+    }
 }
 
-.contact_title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+/*572*/
+@media (min-width: 572px) {
+    h4,h6 {
+        margin: 0.5rem;
+    }
+
+    h6 {
+        font-size: 0.1rem;
+    }
+
+    .contact_box {
+        display: flex;
+        justify-content: space-around;
+        background-color: #8592A2;
+        /* padding: 4rem 0; */
+        text-align: left;
+        padding: 2rem 2rem;
+    }
+    
+    .contact_title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact_text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .contact_img {
+        width: 8rem;
+        height: 7.5rem;
+    }
+    
+    .footer_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_content {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 3rem 2rem 1rem;
+    }
+    
+    .icon_box {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .icon {
+        width:2.5rem;
+        height: 2.5rem;
+        margin: 0.5rem;
+    }
+    
+    .icon:hover {
+        filter: invert(0.3) saturate(0.8);
+    }
 }
 
-.contact_text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
+/*768*/
+@media (min-width: 768px) {
+    h4,h6 {
+        margin: 0.5rem;
+    }
 
-.contact_img {
-    width: 12rem;
-    height: 10rem;
-}
+    h6 {
+        font-size: 1.3rem;
+        line-height: normal;
+    }
 
-.footer_box {
-    /* padding: 4rem 4rem; */
-    height: 28rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .contact_box {
+        display: flex;
+        justify-content: space-around;
+        background-color: #8592A2;
+        /* padding: 4rem 0; */
+        text-align: left;
+        padding: 4rem 0;
+    }
+    
+    .contact_title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact_text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    
+    .contact_img {
+        width: 12rem;
+        height: 10rem;
+    }
+    
+    .footer_box {
+        /* padding: 4rem 4rem; */
+        height: 28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_content {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 5rem;
+    }
+    
+    .icon_box {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .icon {
+        width:4.5rem;
+        height: 4.5rem;
+        margin: 1rem;
+    }
+    
+    .icon:hover {
+        filter: invert(0.3) saturate(0.8);
+    }
 
-.footer_content {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 5rem;
-}
-
-.icon_box {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.icon {
-    width:4.5rem;
-    height: 4.5rem;
-    margin: 1rem;
-}
-
-.icon:hover {
-    filter: invert(0.3) saturate(0.8);
+    .footer_bottom {
+        font-size: 1rem;
+    }
 }
