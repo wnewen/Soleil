@@ -44,7 +44,7 @@ function Banner() {
                 </div>
 
                 <div className={styles.nav_position}>
-                    <NavLink to="/category/news"
+                    <NavLink to="/news"
                         style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                         news
