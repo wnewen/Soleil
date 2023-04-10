@@ -20,7 +20,7 @@ function CartSummary({ size, color }) {
     return (
         <nav onClick={toggleModal} >
             <Badge count={count} color="#29231f">
-                <CartIcon size={size} color={color}/>
+                <CartIcon className={styles.icon} size={size} color={color}/>
             </Badge>
         </nav>
     )

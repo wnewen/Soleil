@@ -3,24 +3,24 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
     return (
-        <div>
-            <NavLink to="/category/:categoryName" 
+        <div className={styles.nav_Box}>
+            <NavLink to="/news"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 news
             </NavLink >
-            <NavLink to="/category/:categoryName"
+            <NavLink to="/products/category/manicure"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 manicure
             </NavLink>
-            <NavLink to="/category/:categoryName"
+            <NavLink to="/products/category/handCream"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                handcream
+                hand cream
             </NavLink>
-            <NavLink to="/category/:categoryName"
+            <NavLink to="/products/category/accessories"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 accessories
             </NavLink>
-            <NavLink to="/category/:categoryName"
+            <NavLink to="/products/category/tools"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 tools
             </NavLink>

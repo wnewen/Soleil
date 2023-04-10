@@ -1,16 +1,23 @@
-.navItem {
-    color: burlywood;
+.nav_Box {
+    width: 60%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navItem {
+    color: #A8B7CA;
+    margin: 1rem;
 }
 
 .navItem:hover {
-    color: blueviolet;
-}
+    color: #C8D7EB;
+}  
 
 .navItemActive {
-    color: pink;
-    display: flex;
-    flex-direction: column;
+    color: #C8D7EB;
+    margin: 1rem;
 }
 
+.navItemActive:hover {
+    color: #C8D7EB;
+}
