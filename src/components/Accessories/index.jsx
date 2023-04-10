@@ -11,9 +11,11 @@ function Accessories(){
                 title2={title[3].catergory}
                 product="accessories"
             />
-        
-        <img className={styles.news_img} src="./images/img_accessories.svg"/>
-        <p>Tamburins</p>
+         <div className={styles.content}>
+            <img className={styles.hand_img} src="./images/img_accessories.svg"/>
+            <p className={styles.text}>VACANZA</p>
+         </div>
+       
 
 
         

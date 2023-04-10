@@ -1,71 +1,50 @@
-.news_box{
+.box{
     background-color: #EFEDE9;
     color: #412613;
     display: flex;
     flex-direction: column ;
-    justify-content: flex-start;
+    padding-top: 1rem;
+  
 }
-.news_img{
-    
+.news_img{ 
     margin:0em;
 }
 .title{
     font-family: 'Cormorant Garamond', serif;
     display: flex;
     flex-direction: row;
-    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+.saying{
+    font-family:'Montserrat';
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.newstitle{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0%;
+}
+.date{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1rem;
+   border-top: 2px solid #412613;
+   padding-top: 1.5rem;
+
 }
 
 @media (max-width: 390px) {
-    .title1{
-        font-size: 4em;
-        margin: 0em;
-        margin-left: 0.6em;
-    }
-    .title2{
-        font-size: 3em;
-        margin: 0em;
-        padding-top: 0.3em;
-        margin-left: 0.5em;
-    }
-}
-@media (min-width: 390px) {
-    .title1{
-        font-size: 5.5em;
-        margin: 0em;
-        margin-left: 0.6em;
-    }
-    .title2{
-        font-size: 4.5em;
-        margin: 0em;
-        padding-top: 0.2em;
-        margin-left: 0.5em;
-    }
+    
 }
 @media (min-width: 760px) {
-    .title1{
-        font-size: 5.5em;
-        margin: 0em;
-        margin-left: 0.6em;
-    }
-    .title2{
-        font-size: 4.5em;
-        margin: 0em;
-        padding-top: 0.2em;
-        margin-left: 0.5em;
-    }
+  
 }
 @media (min-width: 1280px) {
-    .title1{
-        font-size: 8em;
-        margin: 0em;
-        margin-left: 0.8em;
-    }
-    .title2{
-        font-size: 6em;
-        margin: 0em;
-        padding-top: 0.3em;
-        margin-left: 0.5em;
-    }
+    
 }
 

@@ -8,6 +8,9 @@
     color: #412613;
 }
 
+.title:hover {
+    color: #8a6243;
+  }
 
 @media (max-width: 390px) {
     p1{

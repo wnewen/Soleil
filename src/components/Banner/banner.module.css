@@ -3,7 +3,16 @@
         display: block;
         width: 100%;
         height: auto;
+        margin-top:0%
+       
 }
+    .content{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(0%, -50%);
+        text-align: center;
+    }
 
     .header {
         display: flex;
@@ -21,9 +30,6 @@
    
 }
 
-@media (min-width: 1280px) {
-
-}
     .container {
         position: relative;
         width: 100%;
@@ -33,60 +39,9 @@
         display: flex;
         flex-direction: row;
 }
-    .t1{
-       
-        position: absolute;
-        top: -280%; /* 將文字垂直置中 */
-        left: 20%; /* 將文字水平置中 */
-        transform: translate(20%, -50%); /* 將文字置中 */
-        font-size: 1em;
-        color: white;
-       
-  }
-    .t2{
-       
-    position: absolute;
-    top: -280%; /* 將文字垂直置中 */
-    left: 20%; /* 將文字水平置中 */
-    transform: translate(20%, -50%); /* 將文字置中 */
-    font-size: 1em;
-    color: white;
-    margin-left: 8rem;
-    margin-top: -2px;
-   
-}
-    .t3{
-       
-        position: absolute;
-        top: -300%; /* 將文字垂直置中 */
-        left: 20%; /* 將文字水平置中 */
-        transform: translate(20%, -50%); /* 將文字置中 */
-        font-size: 1em;
-        color: white;
-   
-}
-    .t4{
-        
-        position: absolute;
-        top: -250%; /* 將文字垂直置中 */
-        left: 20%; /* 將文字水平置中 */
-        transform: translate(20%, -50%); /* 將文字置中 */
-        font-size: 1em;
-        color: white;
-   
-}
-    .t5{
-       
-        position: absolute;
-        top: -280%; /* 將文字垂直置中 */
-        left: 20%; /* 將文字水平置中 */
-        transform: translate(20%, -50%); /* 將文字置中 */
-        font-size: 1em;
-        color: white;
-   
-}
+ 
      h3{
-        margin-left: 2rem;
+        margin-left: 10rem;
     }
 
     .header_position {
@@ -97,6 +52,7 @@
 
     .icon {
         padding-left: 1rem;
+        margin-top: 0%;
     }
 
     .icon_right {
@@ -106,14 +62,31 @@
     .banner_title {
         font-family: 'Cormorant Garamond', serif;
         position: absolute;
-        top: 12.5rem;
-        left: 22.5rem;
+        display: flex;
+        align-items: flex-end;
+        top: -40rem;
+        left: -20rem;
+        padding-top: 0;
+        
+
+    }
+    .t1{
+        margin-top: 0%;
+    }
+    .t2{
+        width:50%;
+        height: auto;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        margin-top: 0%;
     }
     
     .banner_title,h2 {
         text-align: left;
+        display: flex;
         font-size: 6rem;
         margin: 0;
+        flex-direction: column;
     }
     
     .banner_title_tab1 {
@@ -138,8 +111,9 @@
     
     .nav_position {
         position: absolute;
-        top: 20rem;
-        right: 10rem;
+        top: -45rem;
+        right: -35rem;
+        
     }
     
     .navItem {
@@ -156,9 +130,6 @@
     fill: invert(0.73) sepia(0) saturate(0.24);
 }
 
-.navItemActive {
-    
-}
 
 .navItem:hover {
     color: #8a6243;

@@ -11,12 +11,11 @@ function Handcream(){
                 title2={title[2].catergory}
                 product="handcream"
             />
-            
-            <img className={styles.news_img} src="./images/img_handCream.svg"/>
-            <p>Tamburins</p>
-
-
-            
+            <div className={styles.content}>
+            <img className={styles.h_img} src="./images/img_handCream.svg"/>
+            <p className={styles.text}>Tamburins</p>
+            </div>
+       
         </div>
     );
 }

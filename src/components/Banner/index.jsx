@@ -1,10 +1,9 @@
 import styles from "./banner.module.css"
 import { NavLink } from "react-router-dom";
-<<<<<<< HEAD
+
 import React, { useState, useEffect } from 'react';
-=======
 import CartSummary from "../CartSummary";
->>>>>>> 2178691f40041e8184cc25f049ed0134f16917d2
+
 
 function Banner() {
     const [scrollPos, setScrollPos] = useState(0);
@@ -25,7 +24,7 @@ function Banner() {
             
         <div className={styles.container}>
             
-            <img className={styles.banner_img} src="../images/banner.svg" />
+            <img className={styles.banner_img} src="../images/banner.jpeg" />
        
         <div className={styles.header_position}>
                 <span className={styles.header}>
@@ -37,41 +36,36 @@ function Banner() {
                     </span>
                 </span>
             </div>
-            <div >  
+            <div className={styles.content}>  
             <div className={styles.banner_title}>
-                <div className={styles.row}>
-                    <h2 style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}className={styles.t1}>Le </h2>
-                    <h3 style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}className={styles.t2}>soleil </h3>
-                </div>
-               
-                <h2 style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}className={styles.t3}>Et</h2>
-                <h2 style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}className={styles.t4}>La lune</h2>
-                <h6 style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}className={styles.t5}>The beauty of details</h6>
+               <img className={styles.t1}style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}src="./images/title1.svg"/>
+               <img className={styles.t2}style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}src="./images/title2.svg"/>
+            
             </div>
             
             <div className={styles.nav_position}>
             <NavLink to="/category/news" 
-                style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}
+                style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 news
             </NavLink >
             <NavLink to="/products/category/manicure"
-                style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}
+                style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 manicure
             </NavLink>
             <NavLink to="/products/category/handCream"
-                style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}
+                style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 hand cream
             </NavLink>
             <NavLink to="/products/category/accessories"
-            style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}
+            style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 accessories
             </NavLink>
             <NavLink to="/products/category/tools"
-            style={{ transform: `translate(-20%, -${scrollPos / 1}px)` }}
+            style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 tools
             </NavLink>
