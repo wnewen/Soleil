@@ -11,9 +11,19 @@
     margin-top: 5rem;
     margin-bottom: 10rem;
 }
+
+.row {
+    margin: 2rem 2rem;
+}
+
 .news_img1{
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
+    width: 100%;
+}
+.news_img2{
+    width: 100%;
 }
 .news_img3{
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
+    width: 100%;
 }
