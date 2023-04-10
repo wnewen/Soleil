@@ -1,6 +1,7 @@
 import styles from"./tools.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
+import { Link } from 'react-router-dom';
 
 
 function Tools(){
@@ -11,14 +12,22 @@ function Tools(){
                 title2={title[4].catergory}
                 product="tools"
             />
-            <div>
-            <p>“The beautiful thing about learning is nobody can take it away from you.”
-                — B.B. King, Musician</p>
-            </div>
+            <div className={styles.content}>
+            <Link className={styles.title} to={`products/id/10`}>
+            <img className={styles.news_img1} src="./images/tools_left.svg"/>
+            </Link>
+            <Link className={styles.title} to={`products/id/11`}>
+            <img className={styles.news_img2} src="./images//tools_middle.svg"/>
+            </Link>
+            <Link className={styles.title} to={`products/id/12`}>
+            <img className={styles.news_img3} src="./images//tools_right.svg"/>
+            </Link>
             
-            <img className={styles.news_img} src="./images/img_news.svg"/>
-            <p>How to Manifest Your 2023 Goals Using Nail Polish Colors</p>
-            <p>Apr 11 . 2023</p>
+           
+           
+            </div>
+           
+            
 
 
             

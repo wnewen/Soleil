@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    width: 100%;
+
+}
+.BackToTop{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+  
+        
+        
+}

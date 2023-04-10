@@ -5,3 +5,15 @@
     flex-direction: column ;
     justify-content: flex-start;
 }
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.news_img1{
+    margin-right: 5rem;
+}
+.news_img3{
+    margin-left: 5rem;
+}
