@@ -1,6 +1,7 @@
 import styles from"./news.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
+import { NavLink } from "react-router-dom";
 
 function News(){
     return(
@@ -16,9 +17,12 @@ function News(){
                 — B.B. King, Musician</p>
                 
            
-            
-            <img className={styles.news_img} src="./images/img_news.svg"/>
-            <p className={styles.newstitle}>How to Manifest Your 2023 Goals Using Nail Polish Colors</p>
+                <NavLink to="/news">
+                
+                <img className={styles.news_img} src="./images/img_news.svg"/>
+             <p className={styles.newstitle}>How to Manifest Your 2023 Goals Using Nail Polish Colors</p>
+            </NavLink>
+          
            
             <p className={styles.date}>Apr 11 . 2023</p>
             </div>

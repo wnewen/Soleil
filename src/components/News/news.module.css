@@ -24,11 +24,14 @@
     font-family:'Montserrat';
     font-size: 1.3rem;
     font-weight: bold;
+ 
 }
 .newstitle{
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     margin-bottom: 0%;
+    color: #412613;
+    text-align: left;
 }
 .date{
     font-family:'Montserrat', sans-serif;

@@ -1,7 +1,7 @@
 import styles from"./manicure.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
-
+import { NavLink } from "react-router-dom";
 
 function Manicure(){
     return(
@@ -13,7 +13,9 @@ function Manicure(){
             />
             <div className={styles.content}>
                 <div className={styles.lumiere}>
-                    <img src="./images/img_manicure_lumiere.svg"/>
+                <NavLink to="/news">
+                <img src="./images/img_manicure_lumiere.svg"/>
+                </NavLink>
                     <div className={styles.lumiere_text}>
                         <p className={styles.text1}>Lumière</p>
                         <div className={styles.p1}>
