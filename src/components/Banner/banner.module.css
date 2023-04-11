@@ -20,7 +20,21 @@
 }
 
 
+.nav_position {
+    position: absolute;
+    top: -45rem;
+    right: -25rem;
 
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #412613;
+}
 @media (min-width: 390px) {
     
 }
@@ -34,9 +48,15 @@
         
     }
     .t1{
+       
         margin-top: 0%;
+        width: 250px;
+        margin-left: 8rem;
+        margin-top: 8rem;
+       
     }
     .t2{
+       
         width:50%;
         height: auto;
         padding-top: 2rem;
@@ -52,10 +72,29 @@
         padding: 1rem;
         color: #412613;
     }
+    .ppp{
+        font-family:'Montserrat';
+        font-size: 1.5rem;
+        position: absolute;
+        top: 5rem;
+        right: 18rem;
+        
+    }
+    .navItemActive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 5rem;
+        padding: 1rem;
+        color: #412613;
+    }
     .nav_position {
         position: absolute;
         top: -40rem;
-        right: -20rem;
+        right: 30rem;
+        width: 200px;
+        text-align: left;
+    
         
     }
     .banner_title {
@@ -64,7 +103,7 @@
         display: flex;
         align-items: flex-end;
         top: -36rem;
-        left: -20rem;
+        left: -40rem;
         padding-top: 0;
       
     }
@@ -100,6 +139,9 @@
         top: -45rem;
         right: -25rem;
         
+    }
+     .ppp{
+        font-family: 'Cormorant Garamond', serif;
     }
     .banner_title {
         font-family: 'Cormorant Garamond', serif;
@@ -143,17 +185,7 @@
     }
 
 
-    .banner_title {
-        font-family: 'Cormorant Garamond', serif;
-        position: absolute;
-        display: flex;
-        align-items: flex-end;
-        top: -40rem;
-        left: -20rem;
-        padding-top: 0;
-
-
-    }
+    
 
     .t1 {
         margin-top: 0%;
@@ -272,17 +304,7 @@ h3 {
 
 }
 
-.t1 {
-    margin-top: 0%;
-}
 
-.t2 {
-    width: 50%;
-    height: auto;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    margin-top: 0%;
-}
 
 .banner_title,
 h2 {
@@ -313,21 +335,7 @@ h2 {
     font-weight: 300;
 }
 
-.nav_position {
-    position: absolute;
-    top: -45rem;
-    right: -35rem;
 
-}
-
-.navItem {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-size: 2rem;
-    padding: 2rem;
-    color: #412613;
-}
 
     
  
