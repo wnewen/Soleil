@@ -12,14 +12,14 @@
     color: #8a6243;
   }
 
-@media (max-width: 390px) {
+@media (min-width: 320px) {
     p1{
-        font-size: 4em;
+        font-size: 2em;
         margin: 0em;
         margin-left: 0.6em;
     }
     p2{
-        font-size: 3em;
+        font-size: 2em;
         margin: 0em;
         padding-top: 0.3em;
         margin-left: 0.5em;
@@ -27,12 +27,12 @@
 }
 @media (min-width: 390px) {
     p1{
-        font-size: 5.5em;
+        font-size: 3.5em;
         margin: 0em;
         margin-left: 0.6em;
     }
     p2{
-        font-size: 4.5em;
+        font-size: 3.5em;
         margin: 0em;
         padding-top: 0.2em;
         margin-left: 0.5em;
