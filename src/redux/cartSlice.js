@@ -8,17 +8,17 @@ const cartSlice = createSlice( {
     reducers: {
         addCartItems: (state, action) => {
             const item = action.payload;
-            const product = state.cartItems.find((x) => x.id === item.id);
-            if(!!product)
-            {
-                const cartItems = state.cartItems.map((x) =>
-                    x.id === product.id ? item : x
-                );
-            }
-            else
-            {
+            // const product = state.cartItems.find((x) => x.id === item.id);
+            // if(!!product)
+            // {
+            //     const cartItems = state.cartItems.map((x) =>
+            //         x.id === product.id ? item : x
+            //     );
+            // }
+            // else
+            // {
                 state.cartItems = [...state.cartItems, item]
-            }
+            // }
         },
     },
 });
