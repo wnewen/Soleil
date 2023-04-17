@@ -12,47 +12,28 @@
     flex-direction: row;
 }
 .content{
-    
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 90%;
 }
-.lumiere{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.ohora{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-/* .p1{
-    display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-} */
 .lumiere_text{
+    width: 60%;
     display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   text-align: left;
-   width: 60%;
-   height: 50%;
-   margin-bottom: 20%
-    /* margin-left: 15rem; */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 .ohora_text{
-    /* margin-right: 15rem; */
-    
+    width: 60%;
     display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: 60%;
-   height: 50%;
-   margin-top: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 .left {
@@ -99,6 +80,7 @@ p {
         font-family:'Montserrat', sans-serif;
         font-size: 1.2rem;
         text-align: left;
+        line-height: 3rem;
     }
 }
 
