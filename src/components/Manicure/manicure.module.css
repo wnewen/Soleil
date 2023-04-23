@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: column ;
     padding-top: 5rem;
-    width: 90%;
+    width: 100%;
+
+  
 }
 .title{
     font-family: 'Cormorant Garamond', serif;
@@ -12,7 +14,6 @@
     flex-direction: row;
 }
 .content{
-    
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -85,7 +86,7 @@ p {
         font-family:'Montserrat', sans-serif;
         font-size: 0.5rem;
         text-align: left;
-        line-height: 0.7rem
+        line-height: 0.7rem;
     }
 }
 
@@ -99,6 +100,7 @@ p {
         font-family:'Montserrat', sans-serif;
         font-size: 1.2rem;
         text-align: left;
+        line-height: normal;
     }
 }
 

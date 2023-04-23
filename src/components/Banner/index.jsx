@@ -44,31 +44,47 @@ function Banner() {
                 </div>
 
                 <div className={styles.nav_position}>
+
+                    <div className={styles.eachNav}>
                     <NavLink to="/news"
                         style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                        <p className={styles.ppp}>news</p>
                     </NavLink >
+                    </div>
+                    
+                    <div className={styles.eachNav}>
                     <NavLink to="/products/category/manicure"
                         style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                         <p className={styles.ppp}>manicure</p>
                     </NavLink>
+                    </div>
+                    
+                    <div className={styles.eachNav}>
                     <NavLink to="/products/category/handCream"
                         style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                        <p className={styles.ppp}> hand cream</p>
                     </NavLink>
+                    </div>
+                    
+                    <div className={styles.eachNav}>
                     <NavLink to="/products/category/accessories"
                         style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                         <p className={styles.ppp}> accessories</p>
                     </NavLink>
+                    </div>
+                    
+                    <div className={styles.eachNav}>
                     <NavLink to="/products/category/tools"
                         style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }}
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                         <p className={styles.ppp}>tools</p>
                     </NavLink>
+                    </div>
+                    
                 </div>
             </div>
 
