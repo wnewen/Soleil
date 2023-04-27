@@ -54,6 +54,15 @@
     padding: 0 0.5rem;
 }
 
+.btn_delete:hover {
+    cursor: pointer;
+}
+
+.btn_clearCart {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
 .subtotal{
     margin-top: 15%;
     padding-top: 5%;
