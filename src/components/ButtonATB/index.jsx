@@ -19,7 +19,9 @@ function ButtonATB({ product, qty }) {
         dispatch(addCartItems({
             id: product.id,
             name: product.name,
+            category: product.category,
             price: product.price,
+            image: product.image,
             countInStock: product.countInStock,
             qty,
         }))

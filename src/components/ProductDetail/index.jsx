@@ -6,8 +6,6 @@ import { useState } from "react";
 
 function ProductDetail({ product }) {
     const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
-    console.log(product.countInStock);
-    console.log(qty);
     function decreaseQuantity() {
         if (qty > 0) setQty(qty - 1);
     }
@@ -57,7 +55,7 @@ function ProductDetail({ product }) {
                         <h4 className={styles.product_category}>{product.category}</h4>
                         <h5 className={styles.product_description}>{product.description}</h5>
                         <h5 className={styles.product_price}>{price}$</h5>
-                        <div className={styles.number_box}>
+                        <div className={styles.qty_box}>
                             <button onClick={decreaseQuantity}>-</button>
                             <span>{qty}</span>
                             <button onClick={increaseQuantity}>+</button>

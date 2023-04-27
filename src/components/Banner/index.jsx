@@ -31,7 +31,7 @@ function Banner() {
                     <NavLink to="./"><img className={styles.icon} src="./images/icon_soleil.png" /></NavLink>
                     <span className={styles.icon_right}>
                         {/* <NavLink to="./"><img className={styles.icon} src="./images/icon_bag.svg" /></NavLink> */}
-                        <NavLink to="./"><CartSummary size={70} color="#412613" /></NavLink>
+                        <CartSummary size={70} color="#412613" />
                         <NavLink to="./"><img className={styles.icon} src="./images/icon_login.svg" /></NavLink>
                     </span>
                 </span>

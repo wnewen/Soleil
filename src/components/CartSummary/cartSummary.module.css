@@ -8,3 +8,83 @@
     fill: aliceblue;
     stroke: aliceblue;
 }
+
+.cart_text {
+    text-align: center;
+}
+
+
+.row{
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.item_image {
+    width: 100%;
+}
+
+.item_name {
+    font-weight: 700;
+}
+
+.item_catogory {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 15%;
+}
+
+.item_price {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.qty_box {
+    width: 100%;
+    height: 1.5rem;
+    border: #412613 solid 1px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qty_button {
+    padding: 0 0.5rem;
+}
+
+.subtotal{
+    margin-top: 15%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    border-top: #412613 solid 1px;
+}
+
+.subtotal_title {
+    font-family: 'Cormorant';
+    font-size: 2rem;
+}
+
+.subtotal_price {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+}
+
+.subtotal_text {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5% 0;
+}
+
+.btn_check_out {
+    margin-top: 10%;
+    width: 100%;
+    height: 3rem;
+    background-color: #412613;
+    color: #EFEDE9;
+    font-weight: 400;
+}
+
