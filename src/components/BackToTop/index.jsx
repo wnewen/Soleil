@@ -8,11 +8,7 @@ function handleClick() {
 function BackToTop(){
     return(
         <div className={styles.box}>
-         
-    
-                    <img className={styles.bttimg} onClick={handleClick} src="./images/icon_soleil.svg"/>
-                
-          
+            <img className={styles.bttimg} onClick={handleClick} src="./images/icon_soleil.svg"/>
         </div>
     )
 }

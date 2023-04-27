@@ -4,9 +4,16 @@
     align-items: flex-start;
     margin: auto;
     width: 72%;
-    margin-top: 8rem;
 }
+
+.breadcrumb {
+    margin-top: 8rem;
+    margin-left: -2rem;
+}
+
 .title1{
+    margin-top: 2rem;
+    text-align: left;
     font-family: 'Cormorant Garamond', serif;
     font-size: 48px;
 }

@@ -3,15 +3,16 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import NewsContent from "../components/NewsContent";
 
+
 function NewsPage() {
-    return(
+    return (
         <div>
             <Helmet><title>news</title></Helmet>
             <Header />
             <NewsContent />
             <Footer />
         </div>
-    ) ;
+    );
 }
 
 export default NewsPage;

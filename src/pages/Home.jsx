@@ -10,27 +10,27 @@ import Handcream from '../components/Handcream';
 import Accessories from '../components/Accessories';
 import Tools from '../components/Tools';
 import BackToTop from '../components/BackToTop';
-import styles from './home.module.css'
+import styles from './home.module.css';
+
 
 function Home() {
-    return(
+    return (
         <div>
             <Helmet><title>Soleil</title></Helmet>
-
-            <Banner className="layoutHeader"/>
+            <Banner className="layoutHeader" />
             <div className={styles.container}>
-            <News/>
-            <Manicure/>
-            <Handcream/>
-            <Accessories/>
-            <Tools/>
-            <div className={styles.BackToTop}>
-            <BackToTop/>
-            </div>
+                <News />
+                <Manicure />
+                <Handcream />
+                <Accessories />
+                <Tools />
+                <div className={styles.BackToTop}>
+                    <BackToTop />
+                </div>
             </div>
             <Footer />
         </div>
-    ) ;
+    );
 }
 
 export default Home;

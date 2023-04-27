@@ -5,3 +5,8 @@
     width: 80%;
     margin: 8rem auto;
 }
+
+.breadcrumb {
+    margin-left: -2rem;
+    margin-bottom: 4rem;
+}
