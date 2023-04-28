@@ -13,12 +13,19 @@
     text-align: center;
 }
 
+.title_bag {
+    font-family: 'Cormorant';
+    font-size: 2rem;
+    margin-top: 0;
+    font-weight: 400;
+}
 
 .row{
     justify-content: space-between;
     font-family: 'Montserrat';
     font-size: 1.5rem;
     margin-top: 2rem;
+    color: #412613;
 }
 
 .item_image {
@@ -61,6 +68,7 @@
 .btn_clearCart {
     margin-top: 1rem;
     cursor: pointer;
+    width: 5rem;
 }
 
 .subtotal{
@@ -78,7 +86,7 @@
 
 .subtotal_price {
     font-family: 'Montserrat';
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .subtotal_text {

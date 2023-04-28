@@ -8,14 +8,16 @@ import Product from './pages/Product'
 import { HelmetProvider } from 'react-helmet-async'
 // import { darkTheme, lightTheme } from './theme';
 import { Provider } from 'react-redux'
-import store from './redux/store';
+import { persistor, store } from './redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-      <Provider store={store}>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
         <HelmetProvider context={{}}>
           <BrowserRouter>
             <Routes>
@@ -29,7 +31,8 @@ function App() {
             </Routes>
           </BrowserRouter>
         </HelmetProvider>
-      </Provider>
+      </PersistGate>
+    </Provider>
   )
 }
 

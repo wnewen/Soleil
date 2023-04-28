@@ -20,6 +20,9 @@ function CartSummary({ size, color }) {
         cartItems.reduce((sum, item) => sum + item.qty * item.price, 0)
         : 0;
 
+    const shippingText = `only $${35-totalPrice}.00 to free shipping!`;
+    const freeShippingText = "You’ve qualified for FREE shipping";
+    let drawerTitle = totalPrice > 35 ? freeShippingText : shippingText;
     return (
         <>
             <nav onClick={() => setOpen(true)}>
@@ -28,6 +31,7 @@ function CartSummary({ size, color }) {
                 </Badge>
             </nav>
             <Drawer
+                title={drawerTitle}
                 open={open}
                 onClose={() => setOpen(false)}
             >
@@ -40,6 +44,7 @@ function CartSummary({ size, color }) {
                         </div>
                     ) : (
                         <>
+                            <h3 className={styles.title_bag}>Your Bag</h3>
                             {cartItems.map(item => (
 
                                 <Row key={item.id} className={styles.row}>
