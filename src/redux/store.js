@@ -3,6 +3,7 @@ import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
 import thunk from 'redux-thunk';
 import cartReducer from './cartSlice';
+import colorReducer from './colorSlice';
 //import colorReducer from './colorSLice';
 
 // Data Persist Config
@@ -11,12 +12,13 @@ const persistConfig = {
   storage,
 }
 const persistedCartReducer = persistReducer(persistConfig, cartReducer);
-//const persistedColorReducer = persistReducer(persistConfig, colorReducer);
+const persistedColorReducer = persistReducer(persistConfig, colorReducer);
 
 //part2: combine reducers and create a store
 export const store = configureStore({
     reducer: {
         cart: persistedCartReducer,
+        color: persistedColorReducer,
     },
     devTools: process.env.NODE_ENV !== 'production', 
     middleware: [thunk]

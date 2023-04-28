@@ -4,6 +4,7 @@ import CartSummary from "../CartSummary";
 import { useState } from "react";
 import HamburgerMenu from "../HamburgerMenu";
 import Navigation from "../Navigation";
+import SetColotMode from "../SetColorMode";
 
 function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
@@ -17,6 +18,7 @@ function Header() {
             <Navigation open={isOnTouch} onClose={() => setIsOnTouch(false)} />
 
             <div className={styles.header_right_box}>
+                <SetColotMode />
                 <CartSummary 
                     className={styles.icon} 
                     size={60} color="#AAA6A4"/>
