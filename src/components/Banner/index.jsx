@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import React, { useState, useEffect } from 'react';
 import CartSummary from "../CartSummary";
-
+import SetColotMode from "../SetColorMode";
 
 function Banner() {
     const [scrollPos, setScrollPos] = useState(0);
@@ -30,6 +30,7 @@ function Banner() {
                 <span className={styles.header}>
                     <NavLink to="./"><img className={styles.icon} src="./images/icon_soleil.png" /></NavLink>
                     <span className={styles.icon_right}>
+                        <SetColotMode />
                         {/* <NavLink to="./"><img className={styles.icon} src="./images/icon_bag.svg" /></NavLink> */}
                         <CartSummary size={70} color="#412613" />
                         <NavLink to="./"><img className={styles.icon} src="./images/icon_login.svg" /></NavLink>

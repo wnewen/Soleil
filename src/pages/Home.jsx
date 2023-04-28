@@ -11,12 +11,23 @@ import Accessories from '../components/Accessories';
 import Tools from '../components/Tools';
 import BackToTop from '../components/BackToTop';
 import styles from './home.module.css';
+import { theme } from 'antd';
 
 
 function Home() {
+    const {
+        token: { colorPrimary, },
+    } = theme.useToken();
     return (
         <div>
-            <Helmet><title>Soleil</title></Helmet>
+            <Helmet>
+                <title>Soleil</title>
+                <style>{`
+                    body {
+                        color: ${colorPrimary}
+                    }
+                `}</style>
+            </Helmet>
             <Banner className="layoutHeader" />
             <div className={styles.container}>
                 <News />

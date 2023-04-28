@@ -1,9 +1,16 @@
 import { NavLink } from "react-router-dom";
+import { theme } from "antd";
 import styles from "./footer.module.css"
 
 function Footer() {
+    const {
+        token: { colorBgFooter, colorTextFooter },
+    } = theme.useToken();
     return(
-        <div>
+        <div style={{
+            backgroundColor: colorBgFooter,
+            color: colorTextFooter
+        }}>
             <div className={styles.contact_box}>
                 <span>
                     <h4 className={styles.contact_title}>Contact us</h4>
