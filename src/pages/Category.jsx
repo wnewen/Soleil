@@ -4,21 +4,18 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import products from "../json/products.json";
 import ProductList from '../components/ProductList';
+import { theme } from 'antd';
 
 function Category() {
+    const {
+        token: { colorTextBase, colorBgBase, colorBorder },
+    } = theme.useToken();
+
     const { categoryName } = useParams();
     const _products = !categoryName
     ? products
     : products.filter(
-        x => x?.category.toUpperCase() === categoryName.toUpperCase()
-        // x =>
-        // {
-        //     const category = x?.category?.toUpperCase();
-        //     const filterCategory = categoryName?.toUpperCase();
-        //     console.log(`Category: ${category}, Filter: ${filterCategory}`);
-        //     return category === filterCategory;
-        // }
-        
+        x => x?.category.toUpperCase() === categoryName.toUpperCase()        
     );
 
     const title = !categoryName
@@ -27,7 +24,16 @@ function Category() {
     
     return(
         <div>
-            <Helmet><title>{title}</title></Helmet>
+            <Helmet>
+                <title>{title}</title>
+                <style>{`
+                    body {
+                        background-color: ${colorBgBase};
+                        color: ${colorTextBase};
+                        border-color: ${colorBorder};
+                    }
+                `}</style>
+            </Helmet>
             <Header />
             <ProductList products={_products}/>
             <Footer />

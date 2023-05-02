@@ -281,51 +281,6 @@
         display: flex;
     }
 
-
-    
-
-   
-
-    /* .banner_title,
-    h2 {
-=======
-  
-    
-    
-    .banner_title,h2 {
->>>>>>> 7f5e8e3c050306553c88b9724bb98cde096aec61
-        text-align: left;
-        display: flex;
-        font-size: 6rem;
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .banner_title_tab1 {
-        position: relative;
-        left: 4rem;
-    }
-
-    .banner_title_tab2 {
-        position: relative;
-        left: 8rem;
-    }
-
-    .banner_text_tab2 {
-        position: relative;
-        left: 8rem;
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-        text-align: left;
-        font-size: 1.5rem;
-        font-weight: 300;
-
-    } */
-
-  
-
-   
-
     .icon:hover {
         fill: invert(0.73) sepia(0) saturate(0.24);
     }
@@ -365,57 +320,6 @@ h3 {
 .icon_right {
     display: flex;
 }
-
-/* .banner_title {
-    font-family: 'Cormorant Garamond', serif;
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    top: -40rem;
-    left: -20rem;
-    padding-top: 0;
-
-
-} */
-
-
-
-/* .banner_title,
-h2 {
-    text-align: left;
-    display: flex;
-    font-size: 6rem;
-    margin: 0;
-    flex-direction: column;
-}
-
-.banner_title_tab1 {
-    position: relative;
-    left: 4rem;
-}
-
-.banner_title_tab2 {
-    position: relative;
-    left: 8rem;
-}
-
-.banner_text_tab2 {
-    position: relative;
-    left: 8rem;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-
-
-    
- 
-    
- */
-
 
 .icon:hover {
     fill: invert(0.73) sepia(0) saturate(0.24);

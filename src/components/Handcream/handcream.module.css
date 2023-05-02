@@ -1,6 +1,4 @@
 .handc_box{
-    background-color: #EFEDE9;
-    color: #412613;
     display: flex;
     flex-direction: column ;
     justify-content: flex-start;

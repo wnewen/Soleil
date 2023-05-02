@@ -1,11 +1,20 @@
 import styles from"./accessories.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
-import { NavLink } from "react-router-dom";
+import { theme } from "antd";
 
 function Accessories(){
+    const {
+        token: { colorBgBase, colorTextBase },
+    } = theme.useToken();
     return(
-        <div className={styles.acce_box}>
+        <div 
+            className={styles.acce_box}
+            style={{
+                backgroundColor: colorBgBase,
+                color: colorTextBase
+            }}
+        >
           <TitleItem
                 title1={title[3].id}
                 title2={title[3].catergory}

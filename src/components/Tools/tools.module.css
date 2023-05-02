@@ -1,6 +1,4 @@
 .tools_box{
-    background-color: #EFEDE9;
-    color: #412613;
     display: flex;
     flex-direction: column ;
     justify-content: flex-start;
@@ -22,13 +20,11 @@
 }
 
 .news_img1{
-    /* margin-right: 5rem; */
     width: 100%;
 }
 .news_img2{
     width: 100%;
 }
 .news_img3{
-    /* margin-left: 5rem; */
     width: 100%;
 }

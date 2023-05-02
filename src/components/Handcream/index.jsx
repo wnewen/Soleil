@@ -1,11 +1,21 @@
 import styles from"./handcream.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
-import { NavLink } from "react-router-dom";
+import { theme } from "antd";
+
 
 function Handcream(){
+    const {
+        token: { colorBgBase, colorTextBase },
+    } = theme.useToken();
     return(
-        <div className={styles.handc_box}>
+        <div 
+            className={styles.handc_box}
+            style={{
+                backgroundColor: colorBgBase,
+                color: colorTextBase
+            }}
+        >
               <TitleItem
                 title1={title[2].id}
                 title2={title[2].catergory}

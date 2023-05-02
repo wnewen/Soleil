@@ -16,7 +16,7 @@ import { theme } from 'antd';
 
 function Home() {
     const {
-        token: { colorPrimary, },
+        token: { colorPrimaryText, colorBgBase },
     } = theme.useToken();
     return (
         <div>
@@ -24,7 +24,8 @@ function Home() {
                 <title>Soleil</title>
                 <style>{`
                     body {
-                        color: ${colorPrimary}
+                        background-color: ${colorBgBase}
+                        color: ${colorPrimaryText}
                     }
                 `}</style>
             </Helmet>

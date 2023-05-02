@@ -49,7 +49,7 @@
 
 .qty_box {
     height: 3rem;
-    border: #412613 solid 1px;
+    border: solid 1px;
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;

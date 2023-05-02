@@ -2,12 +2,21 @@ import styles from "./tools.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
 import { Link } from 'react-router-dom';
-import { Row, Col } from "antd";
+import { Row, Col, theme } from "antd";
 
 
 function Tools() {
+    const {
+        token: { colorBgBase, colorTextBase },
+    } = theme.useToken();
     return (
-        <div className={styles.tools_box}>
+        <div 
+            className={styles.tools_box}
+            style={{
+                backgroundColor: colorBgBase,
+                color: colorTextBase
+            }}
+        >
             <TitleItem
                 title1={title[4].id}
                 title2={title[4].catergory}

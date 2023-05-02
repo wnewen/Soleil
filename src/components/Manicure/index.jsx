@@ -1,12 +1,20 @@
 import styles from "./manicure.module.css"
 import TitleItem from "../TitleItem"
 import title from "../json/title.json"
-import { Row, Col } from "antd";
-import { NavLink } from "react-router-dom";
+import { Row, Col, theme } from "antd";
 
 function Manicure() {
+    const {
+        token: { colorBgBase, colorTextBase },
+    } = theme.useToken();
     return (
-        <div className={styles.mani_box}>
+        <div 
+            className={styles.mani_box}
+            style={{
+                backgroundColor: colorBgBase,
+                color: colorTextBase
+            }}
+        >
             <TitleItem
                 title1={title[1].id}
                 title2={title[1].catergory}
