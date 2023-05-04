@@ -1,4 +1,4 @@
-import { Row, Col, Breadcrumb } from "antd";
+import { Row, Col, Breadcrumb, Button } from "antd";
 import styles from "./productDetail.module.css";
 import ButtonATB from "../ButtonATB";
 import { useState } from "react";
@@ -56,9 +56,9 @@ function ProductDetail({ product }) {
                         <h5 className={styles.product_description}>{product.description}</h5>
                         <h5 className={styles.product_price}>{price}$</h5>
                         <div className={styles.qty_box}>
-                            <button onClick={decreaseQuantity}>-</button>
+                            <Button type='text' style={{border: 'none'}} onClick={decreaseQuantity}>-</Button>
                             <span>{qty}</span>
-                            <button onClick={increaseQuantity}>+</button>
+                            <Button type='text' style={{border: 'none'}} onClick={increaseQuantity}>+</Button>
                         </div>
                         <ButtonATB product={product} qty={qty} />
 

@@ -5,11 +5,17 @@ import Footer from '../components/Footer';
 import products from "../json/products.json";
 import ProductList from '../components/ProductList';
 import { theme } from 'antd';
+import { useProducts } from '../react-query';
 
 function Category() {
     const {
         token: { colorTextBase, colorBgBase, colorBorder },
     } = theme.useToken();
+
+    const { data, isLoading } = useProducts();
+    const products = data || [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6}];
+    console.log(data)
+    console.log(products);
 
     const { categoryName } = useParams();
     const _products = !categoryName
@@ -20,7 +26,7 @@ function Category() {
 
     const title = !categoryName
         ? "NORDIC NEST Shopping Cart"
-        : _products[0]?.category;
+        : _products[0]?.category.toLowerCase();
     
     return(
         <div>
@@ -35,7 +41,7 @@ function Category() {
                 `}</style>
             </Helmet>
             <Header />
-            <ProductList products={_products}/>
+            <ProductList products={_products} isLoading={isLoading}/>
             <Footer />
         </div>
     );

@@ -22,7 +22,7 @@ function Tools() {
                 title2={title[4].catergory}
                 product="tools"
             />
-            <div className={styles.img_box}>
+            <div className={styles.content}>
                 <Row gutter={[32, 32]} className={styles.row}>
 
                     <Col

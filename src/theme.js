@@ -8,10 +8,16 @@ const darkTheme = {
     colorBorder: "#C8D7EB",
     colorBgFooter: "#433F3B",
     colorTextFooter: "#C8D7EB",
+    
+    
   },
   components: {
     Button: {
-      
+      colorTextButton: "#412613",
+      colorPrimary: "#8592A2",
+      colorPrimaryHover: "#000000",
+      colorPrimaryActive: "#030202",
+      colorPrimaryBorder: "#EFEDE9",
     }
   },
 };
@@ -28,7 +34,10 @@ const lightTheme = {
   },
   components: {
     Button: {
-
+      colorPrimary: "#29231F",
+      colorPrimaryHover: "#000000",
+      colorPrimaryActive: "#030202",
+      
     },
   },
 };

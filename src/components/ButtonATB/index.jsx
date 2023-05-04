@@ -1,9 +1,16 @@
 import styles from './buttonATB.module.css';
 import { Button, notification } from "antd";
 import { addCartItems } from '../../redux/cartSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { theme } from "antd";
+import { selectLightMode } from "../../redux/colorSlice";
 
 function ButtonATB({ product, qty }) {
+    const lightMode = useSelector(selectLightMode);
+    const { 
+        token: { colorTextButton },
+    } = theme.useToken();
+    
     const dispatch = useDispatch();
     const openNotification = () => {
         notification.open({
@@ -28,10 +35,17 @@ function ButtonATB({ product, qty }) {
     };
 
     return(
-        <Button className={styles.botton_box} onClick={addToCart}>
-            <h4 className={styles.botton_text}>
-                ADD TO BAG
-            </h4>
+        <Button 
+            type='primary'
+            className={styles.botton_box} 
+            onClick={addToCart}
+            style={{
+                boxShadow: 'none',
+                border: 'none',
+                color: colorTextButton,
+            }}
+        >
+            ADD TO BAG
         </Button>
     );
 }
