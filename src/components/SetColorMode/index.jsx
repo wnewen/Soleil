@@ -2,7 +2,8 @@ import { theme } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { selectLightMode, setColorMode } from "../../redux/colorSlice";
 import styles from './setColorMode.module.css';
-
+import React from 'react';
+import {BsMoonStars, BsSun } from 'react-icons/bs'
 
 function SetColotMode() {
     const { token: { colorTextBase }} = theme.useToken();
@@ -16,9 +17,9 @@ function SetColotMode() {
         <div onClick={toggleColor}>
             {
                 lightMode ? (
-                    <img src='/images/sun.png' className={styles.icon}></img>
+                    <BsSun className={styles.icon}/>
                 ) : (
-                    <img src='/images/moon.png' className={styles.icon}></img>
+                    <BsMoonStars className={styles.icon}/>
                 )
             }
         </div>

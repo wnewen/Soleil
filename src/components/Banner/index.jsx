@@ -6,6 +6,7 @@ import SetColotMode from "../SetColorMode";
 import { theme } from "antd";
 import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
+//import { BsPerson, BsHangbag} from 'react-icons/bs'
 
 function Banner() {
     const lightMode = useSelector(selectLightMode);

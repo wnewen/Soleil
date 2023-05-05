@@ -6,7 +6,7 @@ import CartIcon from "./Icons"
 import { addCartItems, clearCart, removeCartItems, selectCarItems } from "../../redux/cartSlice";
 
 
-function CartSummary({ size, color }) {
+function CartSummary() {
 
     //const { token: { colorTextBase }} = theme/useToken();
     // const toggleCart = () => setIsOpen(!isOpen);
@@ -27,7 +27,7 @@ function CartSummary({ size, color }) {
         <>
             <nav onClick={() => setOpen(true)}>
                 <Badge count={count} color="#29231f">
-                    <CartIcon className={styles.icon} size={size} color={color} />
+                    <CartIcon />
                 </Badge>
             </nav>
             <Drawer

@@ -2,9 +2,14 @@ import { Row, Col, Breadcrumb, Button, Skeleton } from "antd";
 import styles from "./productDetail.module.css";
 import ButtonATB from "../ButtonATB";
 import { useState } from "react";
+import DescriptionBt from "../DescriptionBt/descriptionBt";
 
-
+ 
 function ProductDetail({ product}) {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const toggleExpansion = () => {
+        setIsExpanded((prevIsExpanded) => !prevIsExpanded);
+      };
     const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
     function decreaseQuantity() {
         if (qty > 0) setQty(qty - 1);
@@ -67,9 +72,11 @@ function ProductDetail({ product}) {
 
                             <div className={styles.line}>
                             </div>
+               
                             <h5 className={styles.description_title}>Description</h5>
-                            <h5 className={styles.description_content}>{product.description_long}</h5>
+                            <h5 id="desvription" className={styles.description_content}>{product.description_long}</h5>
                         {/* </Skeleton> */}
+                        
                     </Col>
                 </Row>
 
