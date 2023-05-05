@@ -4,7 +4,7 @@ import ButtonATB from "../ButtonATB";
 import { useState } from "react";
 
 
-function ProductDetail({ product, isLoading }) {
+function ProductDetail({ product}) {
     const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
     function decreaseQuantity() {
         if (qty > 0) setQty(qty - 1);
@@ -40,20 +40,20 @@ function ProductDetail({ product, isLoading }) {
                         xs={{ span: 24 }}
                         lg={{ span: 12 }}
                     >
-                        <Skeleton loading={isLoading}>
+                        {/* <Skeleton loading={isLoading}> */}
                             <img
                                 alt={product.name}
                                 className={styles.image}
                                 src={product.image}
                             />
-                        </Skeleton>
+                        {/* </Skeleton> */}
                     </Col>
                     <Col
                         xs={{ span: 24 }}
                         lg={{ span: 12 }}
                         className={styles.product_detail_right_box}
                     >
-                        <Skeleton loading={isLoading}>
+                        {/* <Skeleton loading={isLoading}> */}
                             <h3 className={styles.product_name}>{product.name}</h3>
                             <h4 className={styles.product_category}>{product.category}</h4>
                             <h5 className={styles.product_description}>{product.description}</h5>
@@ -69,7 +69,7 @@ function ProductDetail({ product, isLoading }) {
                             </div>
                             <h5 className={styles.description_title}>Description</h5>
                             <h5 className={styles.description_content}>{product.description_long}</h5>
-                        </Skeleton>
+                        {/* </Skeleton> */}
                     </Col>
                 </Row>
 

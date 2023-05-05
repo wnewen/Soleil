@@ -31,7 +31,6 @@ function Product() {
             <Header />
             <ProductDetail 
                 product={product}
-                isLoading={isLoading}
             />
             <Footer />
         </div>
