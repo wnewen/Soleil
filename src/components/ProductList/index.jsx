@@ -1,8 +1,8 @@
 import styles from './productList.module.css';
-import { Row, Col, Breadcrumb } from 'antd';
+import { Row, Col, Breadcrumb, Skeleton } from 'antd';
 import ProductItem from '../ProductItem';
 
-function ProductList({ products }) {
+function ProductList({ products, isLoading }) {
     const category = products[0].category.charAt(0).toUpperCase() + products[0].category.slice(1);
     return (
         <div className={styles.productList_box}>
@@ -28,7 +28,9 @@ function ProductList({ products }) {
                         xl={{ span: 8 }}
                         xxl={{ span: 8 }}
                     >
-                        <ProductItem product={product} />
+                        <Skeleton loading={isLoading}>
+                            <ProductItem product={product} />
+                        </Skeleton>                        
                     </Col>
                 ))}
             </Row>
