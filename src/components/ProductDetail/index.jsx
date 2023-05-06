@@ -3,10 +3,9 @@ import styles from "./productDetail.module.css";
 import ButtonATB from "../ButtonATB";
 import { useState } from "react";
 import DescriptionBt from "../DescriptionBt/descriptionBt";
-
+import {BsPlus, BsDash} from 'react-icons/bs';
  
 function ProductDetail({ product}) {
-    const [isExpanded, setIsExpanded] = useState(false);
     const toggleExpansion = () => {
         setIsExpanded((prevIsExpanded) => !prevIsExpanded);
       };
@@ -19,6 +18,19 @@ function ProductDetail({ product}) {
             setQty(qty + 1);
     }
     var price = product.price * qty;
+    
+    const [detailsExpanded, setDetailsExpanded] = useState(false);
+    const [includesExpanded, setincludesExpanded] = useState(false);
+
+    const handleDetailsExpand = () => {
+        setDetailsExpanded(!detailsExpanded);
+        setincludesExpanded(false);
+      };
+    
+      const handleIncludesExpand = () => {
+        setincludesExpanded(!includesExpanded);
+        setDetailsExpanded(false);
+      };
     return (
         <div>
 
@@ -72,9 +84,25 @@ function ProductDetail({ product}) {
 
                             <div className={styles.line}>
                             </div>
-               
-                            <h5 className={styles.description_title}>Description</h5>
-                            <h5 id="desvription" className={styles.description_content}>{product.description_long}</h5>
+                            <div onClick={handleDetailsExpand} className={styles.unfold}>
+                                <h5  className={styles.description_title}>DESCRIPTION</h5>
+                                {detailsExpanded?<BsDash className={styles.icon}/>:<BsPlus  className={styles.icon}/>}
+                                </div>
+                                {detailsExpanded && (
+                                <h5 className={styles.description_content}>{product.description_long}</h5>
+                            )}
+                           
+                            <div onClick={handleIncludesExpand} className={styles.unfold}>
+                                <h5  className={styles.description_title}>WHAT'S INCLUDED</h5>
+                                {includesExpanded?<BsDash  className={styles.icon}/>:<BsPlus  className={styles.icon}/>}
+                            </div>
+                                {includesExpanded&& (
+                                    <h5 className={styles.description_content}>{product.includes}</h5>
+                                )}
+  
+                            
+                            
+                           
                         {/* </Skeleton> */}
                         
                     </Col>
@@ -85,5 +113,6 @@ function ProductDetail({ product}) {
         </div>
     );
 }
+    
 
 export default ProductDetail;
