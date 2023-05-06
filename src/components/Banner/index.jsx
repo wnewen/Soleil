@@ -36,7 +36,7 @@ function Banner() {
 
             <div className={styles.header_position}>
                 <span className={styles.header}>
-                    <NavLink to="./"><img className={styles.icon} src="/images/icon_soleil.png" /></NavLink>
+                    <NavLink to="./"><img className={styles.icon} src="./images/icon_soleil.svg" /></NavLink>
                     <span className={styles.icon_right}>
                         <SetColotMode />
                         <CartSummary size={70} color="#412613" />

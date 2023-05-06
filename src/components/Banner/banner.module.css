@@ -315,10 +315,12 @@ h3 {
 .icon {
     padding-left: 1rem;
     margin-top: 0%;
+    width: 6rem;
 }
 
 .icon_right {
     display: flex;
+    margin-top: 1.5rem;
 }
 
 .icon:hover {
