@@ -8,6 +8,7 @@
       "image": "/images/lumiere_left.svg",
       "description": "press-on nails",
       "description_long": "Keep warm with the cozy Domino wool throw from Klippan Yllefabrik. Klippan Yllefabric was founded in 1879 with a philosophy to combine Swedish design with the traditional knowledge of textiles. This particular throw has a simple, classic pattern design and is available in different colors.",
+      "includes":"10 manicure strips in customized size, 2 prep pads, 2 nail file, 1 wooden manicure stick, 1 nail glue",
       "currency": "USD",
       "countInStock": 10    
     },
@@ -19,6 +20,7 @@
       "price": 20,
       "image": "/images/lumiere_middle.svg",
       "description": "press-on nails",
+      "description_long": "Keep warm with the cozy Domino wool throw from Klippan Yllefabrik. Klippan Yllefabric was founded in 1879 with a philosophy to combine Swedish design with the traditional knowledge of textiles. This particular throw has a simple, classic pattern design and is available in different colors.",
       "currency": "USD",
       "countInStock": 3    
     },

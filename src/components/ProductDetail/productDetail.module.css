@@ -1,5 +1,5 @@
 .breadcrumb {
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-left: 8%;
 }
 
@@ -38,8 +38,8 @@
 }
 
 .line {
-    margin-top: 2rem;
-    border-bottom: 1px solid;
+    margin-top: 5rem;
+    border-bottom: opx solid;
 }
 
 .product_price {
@@ -62,11 +62,40 @@ h2 {
 }
 
 .description_title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
+    margin:0;
 }
 
 .description_content {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
 }
+
+.unfold{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.7rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    border-bottom: 1px solid;
+    
+}
+@keyframes rotate {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+.icon {
+    color: #412613;
+    animation-name: rotate;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
