@@ -6,6 +6,7 @@ import SetColotMode from "../SetColorMode";
 import { theme } from "antd";
 import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
+//import UserInfo from "../UserInfo";
 //import { BsPerson, BsHangbag} from 'react-icons/bs'
 
 function Banner() {
@@ -31,12 +32,13 @@ function Banner() {
     return (
 
         <div className={styles.container}>
-
-            <img className={styles.banner_img} src={lightMode ? "/images/banner.jpeg" : "/images/dark_mode_banner.svg"} />
-
+            <div className={styles.banner_img}>
+            <img  src={lightMode ? "/images/banner.jpeg" : "/images/banner_DarkMode.jpg"} />
+            </div>
+            
             <div className={styles.header_position}>
                 <span className={styles.header}>
-                    <NavLink to="./"><img className={styles.icon} src="./images/icon_soleil.svg" /></NavLink>
+                    <NavLink to="./"><img className={styles.icon} src="/images/icon_soleil.png" /></NavLink>
                     <span className={styles.icon_right}>
                         <SetColotMode />
                         <CartSummary size={70} color="#412613" />
@@ -46,9 +48,8 @@ function Banner() {
             </div>
             <div className={styles.content}>
                 <div className={styles.banner_title}>
-                    <img className={styles.t1} style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }} src="/images/title1.svg" />
-                    <img className={styles.t2} style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }} src="/images/title2.svg" />
-
+                    <img className={styles.t1} style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }} src={lightMode ? "/images/title1.svg" : "/images/title1_dark.svg"} />
+                    <img className={styles.t2} style={{ transform: `translate(-20%, -${scrollPos / 1.5}px)` }} src={lightMode ? "/images/title2.svg" : "/images/title2_dark.svg"} />
                 </div>
 
                 <div className={styles.nav_position}>
