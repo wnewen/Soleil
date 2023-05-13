@@ -17,6 +17,14 @@
       }
 }
 
+.progressBar{
+
+}
+
+.inner_progressBar{
+
+}
+
 .icon:hover {
     fill: aliceblue;
     stroke: aliceblue;

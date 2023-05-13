@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Row, Col, Badge, Drawer, theme } from "antd";
+import { Row, Col, Badge, Drawer, theme, Progress } from "antd";
 import styles from "./cartSummary.module.css";
 import CartIcon from "./Icons"
 import { addCartItems, clearCart, removeCartItems, selectCarItems } from "../../redux/cartSlice";
@@ -23,25 +23,30 @@ function CartSummary() {
     const shippingText = `only $${35-totalPrice}.00 to free shipping!`;
     const freeShippingText = "You’ve qualified for FREE shipping";
     let drawerTitle = totalPrice > 35 ? freeShippingText : shippingText;
+
     return (
         <>
             <nav onClick={() => setOpen(true)}>
                 <Badge count={count} color="#29231f">
-                    <CartIcon />
+                  <CartIcon />
                 </Badge>
             </nav>
             <Drawer
                 title={drawerTitle}
                 open={open}
                 onClose={() => setOpen(false)}
-            >
+                progressBar={drawerTitle}
+            > 
+            <Progress percent={(totalPrice/35)*100} showInfo={false}  strokeColor= { totalPrice > 35 ? "#29231f" : "#EFEDE9"}/>
                 {
+                    
                     cartItems.length === 0 ? (
                         <div>
                             <p className={styles.cart_text}>
                                 Your Cart Is Empty
                             </p>
                         </div>
+                
                     ) : (
                         <>
                             <h3 className={styles.title_bag}>Your Bag</h3>

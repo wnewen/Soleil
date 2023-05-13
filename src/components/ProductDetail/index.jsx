@@ -100,7 +100,6 @@ function ProductDetail({ product}) {
                                     <h5 className={styles.description_content}>{product.includes}</h5>
                                 )}
   
-805313aa66cd8023177f89b77013
                            
                         {/* </Skeleton> */}
                         
