@@ -70,7 +70,7 @@ function CartSummary() {
                                         <h6 className={styles.item_catogory}>{item.category}</h6>
                                         <h6 className={styles.item_price}>${item.price}</h6>
                                         <div className={styles.qty_box}>
-                                            <button className={styles.qty_button} onClick={() => {if(item.qty>=1){
+                                            <button className={styles.qty_button} onClick={() => {if(item.qty>1){
                                                 dispatch(addCartItems({
                                                     id: item.id,
                                                     name: item.name,

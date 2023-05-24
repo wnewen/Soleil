@@ -5,6 +5,7 @@ import ProductDetail from '../components/ProductDetail';
 import Footer from '../components/Footer';
 import products from "../json/products.json";
 import { theme } from 'antd';
+import { useProductById } from '../react-query';
 
 function Product() {
     const {
@@ -12,9 +13,11 @@ function Product() {
     } = theme.useToken();
 
     const { productId } = useParams();
-    const product = products.find(
-        (x) => x.id === productId
-    );
+    const { product, isLoading } = useProductById( productId );
+    console.log(product);
+    // const product = products.find(
+    //     (x) => x.id === productId
+    // );
 
     return(
         <div>
@@ -31,6 +34,7 @@ function Product() {
             <Header />
             <ProductDetail 
                 product={product}
+                isLoading={isLoading}
             />
             <Footer />
         </div>
