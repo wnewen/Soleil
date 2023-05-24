@@ -1,12 +1,22 @@
 import { Drawer } from "antd";
 import styles from "./navigation.module.css"
 import { NavLink } from "react-router-dom";
+import { motion} from "framer-motion";
 
 function Navigation({ open, onClose }) {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+      };
+      const childVariants = {
+        hidden: { opacity: 0,y:-60 },
+        visible: { opacity: 1,y:0 },
+      };      
 
     const NavaigationContent = () => (
-        <div className={styles.nav_Box}>
-            <NavLink to="/news"
+        
+             <div className={styles.nav_Box}>
+                 <NavLink to="/news"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 news
             </NavLink >
@@ -27,6 +37,8 @@ function Navigation({ open, onClose }) {
                 tools
             </NavLink>
         </div>
+       
+       
     )
     return (
         <>

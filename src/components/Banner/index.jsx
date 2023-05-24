@@ -6,6 +6,7 @@ import SetColotMode from "../SetColorMode";
 import { theme } from "antd";
 import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
+import { motion } from "framer-motion";
 //import UserInfo from "../UserInfo";
 //import { BsPerson, BsHangbag} from 'react-icons/bs'
 
@@ -28,6 +29,14 @@ function Banner() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+      };
+      const childVariants = {
+        hidden: { opacity: 0,y:-60 },
+        visible: { opacity: 1,y:0 },
+      };      
 
     return (
 
@@ -53,9 +62,15 @@ function Banner() {
                 </div>
 
                 <div className={styles.nav_position}>
+                <motion.div
+               variants={containerVariants} initial="hidden" animate="visible">
 
-                    <div className={styles.eachNav}>
-                    <NavLink to="/news"
+                 <div className={styles.eachNav}>
+                <motion.div
+               variants={{ hidden: { opacity: 0 },
+               visible: { opacity: 1,y:0 },}}
+                    >
+                <NavLink to="/news"
                         style={{ 
                             transform: `translate(-20%, -${scrollPos / 1.5}px)`, 
                             textDecoration: 'none',
@@ -64,9 +79,11 @@ function Banner() {
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                        <p className={styles.ppp}>news</p>
                     </NavLink >
+                </motion.div> 
                     </div>
-                    
-                    <div className={styles.eachNav}>
+                <motion.div
+               variants={childVariants}>
+                <div className={styles.eachNav}>
                     <NavLink 
                         to="/products/category/manicure"
                         style={{ 
@@ -79,8 +96,11 @@ function Banner() {
                         <p className={styles.ppp}>manicure</p>
                     </NavLink>
                     </div>
-                    
-                    <div className={styles.eachNav}>
+                </motion.div>
+                   
+                <motion.div
+                variants={childVariants}>
+                <div className={styles.eachNav}>
                     <NavLink 
                         to="/products/category/handCream"
                         style={{ 
@@ -93,8 +113,11 @@ function Banner() {
                        <p className={styles.ppp}> hand cream</p>
                     </NavLink>
                     </div>
+                </motion.div>
                     
-                    <div className={styles.eachNav}>
+                <motion.div
+                variants={childVariants}>
+                <div className={styles.eachNav}>
                     <NavLink 
                         to="/products/category/accessories"
                         style={{ 
@@ -107,8 +130,11 @@ function Banner() {
                         <p className={styles.ppp}> accessories</p>
                     </NavLink>
                     </div>
+                </motion.div> 
                     
-                    <div className={styles.eachNav}>
+                <motion.div
+               variants={childVariants}>
+                <div className={styles.eachNav}>
                     <NavLink 
                         to="/products/category/tools"
                         style={{ 
@@ -121,6 +147,9 @@ function Banner() {
                         <p className={styles.ppp}>tools</p>
                     </NavLink>
                     </div>
+                </motion.div>  
+                    
+                    </motion.div>
                     
                 </div>
             </div>
