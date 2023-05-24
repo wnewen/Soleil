@@ -1,9 +1,12 @@
 import styles from './productList.module.css';
 import { Row, Col, Breadcrumb, Skeleton } from 'antd';
 import ProductItem from '../ProductItem';
+import Category from '../../pages/Category';
 
 function ProductList({ products, isLoading }) {
-    const category = products[0].category.charAt(0).toUpperCase() + products[0].category.slice(1);
+    console.log(products);
+    const category = products[0]?.category?.charAt(0).toUpperCase() + products[0]?.category?.slice(1);
+    console.log(category);
     return (
         <div className={styles.productList_box}>
             <Breadcrumb
