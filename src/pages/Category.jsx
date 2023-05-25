@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductList from '../components/ProductList';
 import { theme } from 'antd';
-// import products from '../json/products.json'
 import { useProducts } from '../react-query';
 
 function Category() {
@@ -40,7 +39,6 @@ function Category() {
             </Helmet>
             <Header />
             <ProductList products={_products} isLoading={isLoading}/>
-            {/* isLoading={isLoading} */}
             <Footer />
         </div>
     );

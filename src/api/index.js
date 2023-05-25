@@ -1,5 +1,5 @@
 import { getApps, getApp, initializeApp } from "firebase/app";
-import { getFirestore, collection, doc, setDoc, getDoc, getDocs, deleteDoc } from "firebase/firestore";
+import { getFirestore, collection, doc, setDoc, getDoc, getDocs, deleteDoc, query, where } from "firebase/firestore";
 import products from "../json/products.json";
 
 const firebaseConfig = {
@@ -36,8 +36,7 @@ export const feedProducts = async () => {
 };
 
 export const getProductById = async (id) => {
-   // const docRef = await doc(db, "products", id);
-   const docRef = await doc(productsCollection, id);
+   const docRef = await doc(db, "products", id);
    const docSnap = await getDoc(docRef);
    return docSnap.data();
 };

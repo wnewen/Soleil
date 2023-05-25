@@ -7,8 +7,7 @@ import { theme } from "antd";
 import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
 import { motion } from "framer-motion";
-//import UserInfo from "../UserInfo";
-//import { BsPerson, BsHangbag} from 'react-icons/bs'
+import UserInfo from "../UserInfo";
 
 function Banner() {
     const lightMode = useSelector(selectLightMode);
@@ -47,11 +46,11 @@ function Banner() {
             
             <div className={styles.header_position}>
                 <span className={styles.header}>
-                    <NavLink to="./"><img className={styles.icon} src="/images/icon_soleil.png" /></NavLink>
+                    <NavLink to="./"><img className={styles.icon} src={lightMode ? "/images/icon_soleil.svg" : "/images/dark_mode_icon_soleil.svg"} /></NavLink>
                     <span className={styles.icon_right}>
                         <SetColotMode />
-                        <CartSummary size={70} color="#412613" />
-                        <NavLink to="./"><img className={styles.icon} src="/images/icon_login.svg" /></NavLink>
+                        <CartSummary />
+                        <UserInfo />
                     </span>
                 </span>
             </div>

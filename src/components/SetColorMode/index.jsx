@@ -4,6 +4,7 @@ import { selectLightMode, setColorMode } from "../../redux/colorSlice";
 import styles from './setColorMode.module.css';
 import React from 'react';
 import {BsMoonStars, BsSun } from 'react-icons/bs'
+import { SunIcon, MoonIcon } from "../Icons";
 
 function SetColotMode() {
     const { token: { colorTextBase }} = theme.useToken();
@@ -18,8 +19,12 @@ function SetColotMode() {
             {
                 lightMode ? (
                     <BsSun className={styles.icon}/>
+                    // <SunIcon className={styles.icon} color={colorTextBase}/>
+
                 ) : (
-                    <BsMoonStars className={styles.icon}/>
+                    <BsMoonStars className={`${styles.icon} ${styles.icon_darkMode}`}/>
+                    // <MoonIcon className={styles.icon_darkmode} color={colorTextBase}/>
+
                 )
             }
         </div>

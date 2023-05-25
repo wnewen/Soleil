@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Row, Col, Badge, Drawer, theme, Progress } from "antd";
 import styles from "./cartSummary.module.css";
-import CartIcon from "./Icons"
+import CartIcon from "../Icons"
 import { addCartItems, clearCart, removeCartItems, selectCarItems } from "../../redux/cartSlice";
-
+import { selectLightMode } from "../../redux/colorSlice";
 
 function CartSummary() {
 
@@ -24,12 +24,22 @@ function CartSummary() {
     const freeShippingText = "You’ve qualified for FREE shipping";
     let drawerTitle = totalPrice > 35 ? freeShippingText : shippingText;
 
+    //icon color in lightMode or darkMode 
+    const lightMode = useSelector(selectLightMode);
     return (
         <>
             <nav onClick={() => setOpen(true)}>
-                <Badge count={count} color="#29231f">
-                  <CartIcon />
-                </Badge>
+                {lightMode
+                    ?(
+                        <Badge count={count} color="#29231f">
+                            <CartIcon className={styles.icon}/>
+                        </Badge>
+                    ) : (
+                        <Badge count={count} color="#C8D7EB">
+                            <CartIcon className={styles.icon}/>
+                        </Badge>
+                    )
+                }
             </nav>
             <Drawer
                 title={drawerTitle}

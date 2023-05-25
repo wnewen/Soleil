@@ -1,27 +1,27 @@
 import styles from './productList.module.css';
-import { Row, Col, Breadcrumb, Skeleton } from 'antd';
+import { Row, Col, Breadcrumb, Skeleton, Spin } from 'antd';
 import ProductItem from '../ProductItem';
-import Category from '../../pages/Category';
 
 function ProductList({ products, isLoading }) {
-    console.log(products);
     const category = products[0]?.category?.charAt(0).toUpperCase() + products[0]?.category?.slice(1);
-    console.log(category);
+
     return (
         <div className={styles.productList_box}>
-            <Breadcrumb
-                className={styles.breadcrumb}
-                separator=">"
-                items={[
-                    {
-                        title: 'home',
-                        href: '/',
-                    },
-                    {
-                        title: `${category}`,
-                    }
-                ]}
-            />
+            <Skeleton loading={isLoading} >
+                <Breadcrumb
+                    className={styles.breadcrumb}
+                    separator=">"
+                    items={[
+                        {
+                            title: 'home',
+                            href: '/',
+                        },
+                        {
+                            title: `${category}`,
+                        }
+                    ]}
+                />
+            </Skeleton>
             <Row gutter={[32, 32]}>
                 {products.map(product => (
                     <Col
@@ -31,13 +31,14 @@ function ProductList({ products, isLoading }) {
                         xl={{ span: 8 }}
                         xxl={{ span: 8 }}
                     >
-                        <Skeleton loading={isLoading}>
+                        <Skeleton loading={isLoading} avatar active>
                             <ProductItem product={product} />
-                        </Skeleton>                        
+                        </Skeleton> 
+                        
                     </Col>
                 ))}
             </Row>
-        </div>
+        </div >
     );
 }
 
