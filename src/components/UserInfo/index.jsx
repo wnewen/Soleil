@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
 import { IoPersonOutline } from "react-icons/io5";
 
-export default function UserInfo(props) {
+export default function UserInfo(  color, props) {
     const lightMode = useSelector(selectLightMode);
 //    const { data: userInfo} = useUserInfo();
 //    const navigate = useNavigate();
@@ -18,13 +18,12 @@ export default function UserInfo(props) {
 //       else
 //          navigate("/auth/login?redirect=/auth/profile");
 //    };
-
    return (
     <>
     {lightMode
         ?(
             // <UserIcon className={styles.icon}/>
-            <IoPersonOutline className={styles.icon}/>
+            <IoPersonOutline className={styles.icon} color={color.color}/>
         ) : (
             // <UserIcon className={styles.icon_darkMode}/>
             <IoPersonOutline className={`${styles.icon} ${styles.icon_darkMode}`}/>

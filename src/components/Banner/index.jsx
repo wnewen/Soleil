@@ -47,11 +47,30 @@ function Banner() {
             <div className={styles.header_position}>
                 <span className={styles.header}>
                     <NavLink to="./"><img className={styles.icon} src={lightMode ? "/images/icon_soleil.svg" : "/images/dark_mode_icon_soleil.svg"} /></NavLink>
-                    <span className={styles.icon_right}>
+                    {lightMode
+                        ?(
+                            <span className={styles.icon_right}>
+                                <SetColotMode  color="#412613" />
+                                <CartSummary 
+                                    className={styles.icon}
+                                    color="#412613"/>
+                                <UserInfo color="#412613"/>
+                                </span>
+                        ) : (
+                            <span className={styles.icon_right}>
+                                <SetColotMode color="#C8D7EB" />
+                                <CartSummary 
+                                    className={styles.icon_darkMode} 
+                                    color="#C8D7EB"/>
+                                <UserInfo color="#C8D7EB" />
+                            </span>
+                        )
+                    }
+                    {/* <span className={styles.icon_right}>
                         <SetColotMode />
                         <CartSummary />
                         <UserInfo />
-                    </span>
+                    </span> */}
                 </span>
             </div>
             <div className={styles.content}>

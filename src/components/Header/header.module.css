@@ -50,6 +50,7 @@
         height: 4.5rem;
         margin: 1rem;
         filter: invert(0.73) saturate(0.24) hue-rotate(188deg);
+        color: #C8D7EB;
     }
 }
 
