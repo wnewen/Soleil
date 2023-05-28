@@ -30,17 +30,6 @@ function CartSummary( color ) {
     return (
         <>
             <nav onClick={() => setOpen(true)}>
-            {/* {
-                lightMode ? (
-                    <BsSun className={styles.icon} color={color.color}/>
-                    // <SunIcon className={styles.icon} color={colorTextBase}/>
-
-                ) : (
-                    <BsMoonStars className={styles.icon} color={color.color}/>
-                    // <MoonIcon className={styles.icon_darkmode} color={colorTextBase}/>
-
-                )
-            } */}
                 {lightMode
                     ?(
                         <Badge count={count} color="#29231f">

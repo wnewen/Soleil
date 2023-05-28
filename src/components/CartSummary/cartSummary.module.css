@@ -118,6 +118,10 @@ stroke: aliceblue;
     border-radius: 0;
 }
 
+.qty_button:hover {
+    border: none;
+}
+
 .btn_icon{
     width: 10px;
 }

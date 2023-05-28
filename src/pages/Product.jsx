@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async"
 import Header from '../components/Header';
 import ProductDetail from '../components/ProductDetail';
 import Footer from '../components/Footer';
-import products from "../json/products.json";
+// import products from "../json/products.json";
 import { theme } from 'antd';
 import { useProductById } from '../react-query';
 
@@ -13,7 +13,8 @@ function Product() {
     } = theme.useToken();
 
     const { productId } = useParams();
-    const { product, isLoading } = useProductById( productId );
+    const { data, isLoading } = useProductById( productId );
+    const product = data || {};
     console.log(product);
     // const product = products.find(
     //     (x) => x.id === productId
