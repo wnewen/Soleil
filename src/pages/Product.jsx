@@ -16,9 +16,6 @@ function Product() {
     const { data, isLoading } = useProductById( productId );
     const product = data || {};
     console.log(product);
-    // const product = products.find(
-    //     (x) => x.id === productId
-    // );
 
     return(
         <div>

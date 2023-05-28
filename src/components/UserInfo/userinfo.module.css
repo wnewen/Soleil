@@ -3,6 +3,7 @@
       font-size: 24px;
       margin-left: 1rem;
       margin-right: 1rem;
+      margin-top: -0.3rem;
     }
 }
 @media (min-width: 760px){
@@ -10,6 +11,7 @@
       font-size: 28px;
       margin-left: 1rem;
       margin-right: 1.5rem;
+      
     }
 }
 @media (min-width: 1100px){
