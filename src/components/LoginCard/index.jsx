@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from 'antd';
 import { WarningOutlined, MailOutlined, LockOutlined } from '@ant-design/icons';
-
+import { HiOutlineMail } from "react-icons/hi";
+import { CgLock } from "react-icons/cg";
 import { useSignInWithEmailPassword } from "../../react-query";
 
 import styles from './logincard.module.css';
@@ -50,10 +51,12 @@ const LoginCard = ({ redirect }) => {
                },
             ]}
             hasFeedback
+            className={styles.form_item}
          >
             <Input
-               prefix={<MailOutlined />}
+               prefix={<HiOutlineMail />}
                placeholder="E-Mail"
+               className={styles.from_input}
             />
          </Form.Item>
          <Form.Item
@@ -65,14 +68,16 @@ const LoginCard = ({ redirect }) => {
                },
             ]}
             hasFeedback
+            className={styles.form_item}
          >
             <Input.Password
-               prefix={<LockOutlined />}
+               prefix={<CgLock />}
                type="password"
                placeholder="Password"
+               className={styles.from_input}
             />
          </Form.Item>
-         <Form.Item>
+         <Form.Item className={styles.form_item}>
             <Link className={styles.loginForm__forgot} to={"/"}>
                Forgot password
             </Link>
@@ -83,7 +88,7 @@ const LoginCard = ({ redirect }) => {
             </Form.Item>
          </Form.Item>
 
-         <Form.Item>
+         <Form.Item className={styles.form_item}>
             {isLoading ? (
                <Button
                   type="primary"
