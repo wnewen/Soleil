@@ -31,37 +31,37 @@ function Banner() {
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
-      };
-      const childVariants = {
-        hidden: { opacity: 0,y:-60 },
-        visible: { opacity: 1,y:0 },
-      };      
+    };
+    const childVariants = {
+        hidden: { opacity: 0, y: -60 },
+        visible: { opacity: 1, y: 0 },
+    };
 
     return (
 
         <div className={styles.container}>
             <div className={styles.banner_img}>
-            <img  src={lightMode ? "/images/banner.jpeg" : "/images/banner_DarkMode.jpg"} />
+                <img src={lightMode ? "/images/banner.jpeg" : "/images/banner_DarkMode.jpg"} />
             </div>
-            
+
             <div className={styles.header_position}>
                 <div className={styles.header}>
                     <NavLink to="./"><img className={styles.icon} src={lightMode ? "/images/icon_soleil.svg" : "/images/dark_mode_icon_soleil.svg"} /></NavLink>
                     {lightMode
-                        ?(
+                        ? (
                             <div className={styles.icon_right}>
-                                <SetColotMode  color="#412613" />
-                                <CartSummary 
+                                <SetColotMode color="#412613" />
+                                <CartSummary
                                     className={styles.icon}
-                                    color="#412613"/>
-                                <UserInfo color="#412613"/>
+                                    color="#412613" />
+                                <UserInfo color="#412613" />
                             </div>
                         ) : (
                             <div className={styles.icon_right}>
                                 <SetColotMode color="#C8D7EB" />
-                                <CartSummary 
-                                    className={styles.icon_darkMode} 
-                                    color="#C8D7EB"/>
+                                <CartSummary
+                                    className={styles.icon_darkMode}
+                                    color="#C8D7EB" />
                                 <UserInfo color="#C8D7EB" />
                             </div>
                         )
@@ -75,95 +75,97 @@ function Banner() {
                 </div>
 
                 <div className={styles.nav_position}>
-                <motion.div
-               variants={containerVariants} initial="hidden" animate="visible">
+                    <motion.div
+                        variants={containerVariants} initial="hidden" animate="visible">
 
-                 <div className={styles.eachNav}>
-                <motion.div
-               variants={{ hidden: { opacity: 0 },
-               visible: { opacity: 1,y:0 },}}
-                    >
-                <NavLink to="/news"
-                        style={{ 
-                            transform: `translate(-20%, -${scrollPos / 1.5}px)`, 
-                            textDecoration: 'none',
-                            color: colorTextBase
-                        }}
-                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                       <p className={styles.ppp}>news</p>
-                    </NavLink >
-                </motion.div> 
-                    </div>
-                <motion.div
-               variants={childVariants}>
-                <div className={styles.eachNav}>
-                    <NavLink 
-                        to="/products/category/manicure"
-                        style={{ 
-                            transform: `translate(-20%, -${scrollPos / 1.5}px)`,
-                            textDecoration: 'none',
-                            color: colorTextBase,
-                        }}
-                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
-                    >
-                        <p className={styles.ppp}>manicure</p>
-                    </NavLink>
-                    </div>
-                </motion.div>
-                   
-                <motion.div
-                variants={childVariants}>
-                <div className={styles.eachNav}>
-                    <NavLink 
-                        to="/products/category/handCream"
-                        style={{ 
-                            transform: `translate(-20%, -${scrollPos / 1.5}px)`,
-                            textDecoration: 'none',
-                            color: colorTextBase,
-                        }}
-                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
-                    >
-                       <p className={styles.ppp}> hand cream</p>
-                    </NavLink>
-                    </div>
-                </motion.div>
-                    
-                <motion.div
-                variants={childVariants}>
-                <div className={styles.eachNav}>
-                    <NavLink 
-                        to="/products/category/accessories"
-                        style={{ 
-                            transform: `translate(-20%, -${scrollPos / 1.5}px)`,
-                            textDecoration: 'none',
-                            color: colorTextBase,
-                        }}
-                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
-                    >
-                        <p className={styles.ppp}> accessories</p>
-                    </NavLink>
-                    </div>
-                </motion.div> 
-                    
-                <motion.div
-               variants={childVariants}>
-                <div className={styles.eachNav}>
-                    <NavLink 
-                        to="/products/category/tools"
-                        style={{ 
-                            transform: `translate(-20%, -${scrollPos / 1.5}px)`,
-                            textDecoration: 'none',
-                            color: colorTextBase,
-                        }}
-                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
-                    >
-                        <p className={styles.ppp}>tools</p>
-                    </NavLink>
-                    </div>
-                </motion.div>  
-                    
+                        <div className={styles.eachNav}>
+                            <motion.div
+                                variants={{
+                                    hidden: { opacity: 0 },
+                                    visible: { opacity: 1, y: 0 },
+                                }}
+                            >
+                                <NavLink to="/news"
+                                    style={{
+                                        transform: `translate(-20%, -${scrollPos / 1.5}px)`,
+                                        textDecoration: 'none',
+                                        color: colorTextBase
+                                    }}
+                                    className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+                                    <p className={styles.ppp}>news</p>
+                                </NavLink >
+                            </motion.div>
+                        </div>
+                        <motion.div
+                            variants={childVariants}>
+                            <div className={styles.eachNav}>
+                                <NavLink
+                                    to="/products/category/manicure"
+                                    style={{
+                                        transform: `translate(-20%, -${scrollPos / 1.5}px)`,
+                                        textDecoration: 'none',
+                                        color: colorTextBase,
+                                    }}
+                                    className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
+                                >
+                                    <p className={styles.ppp}>manicure</p>
+                                </NavLink>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            variants={childVariants}>
+                            <div className={styles.eachNav}>
+                                <NavLink
+                                    to="/products/category/handCream"
+                                    style={{
+                                        transform: `translate(-20%, -${scrollPos / 1.5}px)`,
+                                        textDecoration: 'none',
+                                        color: colorTextBase,
+                                    }}
+                                    className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
+                                >
+                                    <p className={styles.ppp}> hand cream</p>
+                                </NavLink>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            variants={childVariants}>
+                            <div className={styles.eachNav}>
+                                <NavLink
+                                    to="/products/category/accessories"
+                                    style={{
+                                        transform: `translate(-20%, -${scrollPos / 1.5}px)`,
+                                        textDecoration: 'none',
+                                        color: colorTextBase,
+                                    }}
+                                    className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
+                                >
+                                    <p className={styles.ppp}> accessories</p>
+                                </NavLink>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            variants={childVariants}>
+                            <div className={styles.eachNav}>
+                                <NavLink
+                                    to="/products/category/tools"
+                                    style={{
+                                        transform: `translate(-20%, -${scrollPos / 1.5}px)`,
+                                        textDecoration: 'none',
+                                        color: colorTextBase,
+                                    }}
+                                    className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}
+                                >
+                                    <p className={styles.ppp}>tools</p>
+                                </NavLink>
+                            </div>
+                        </motion.div>
+
                     </motion.div>
-                    
+
                 </div>
             </div>
 

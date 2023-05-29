@@ -12,7 +12,10 @@ function ProductDetail({ product, isLoading }) {
     const toggleExpansion = () => {
         setIsExpanded((prevIsExpanded) => !prevIsExpanded);
     };
-    const [qty, setQty] = useState(product?.countInStock > 0 ? 1 : 0);
+    // const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+    const [qty, setQty] = useState(1);
+    console.log(product.countInStock);
+    console.log(qty);
     function decreaseQuantity() {
         if (qty > 0) setQty(qty - 1);
     }
@@ -20,7 +23,7 @@ function ProductDetail({ product, isLoading }) {
         if (qty < product?.countInStock)
             setQty(qty + 1);
     }
-    var price = product?.price * qty;
+    var price = product.price * qty;
 
     const [detailsExpanded, setDetailsExpanded] = useState(false);
     const [includesExpanded, setincludesExpanded] = useState(false);

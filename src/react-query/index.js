@@ -1,19 +1,25 @@
-import { useQuery } from '@tanstack/react-query'
-import { getProductById, getProducts, getProductsByCategory} from "../api";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import {
+  getProductById,
+  getProducts,
+  getProductsByCategory,
+  login,
+  register,
+  getUserInfo,
+  updateUserInfo,
+  logout,
+} from "../api";
 
 export const useProducts = () => {
-  const { data, isLoading } = useQuery([], getProducts);
-  return { data, isLoading };
+  return useQuery([], getProducts);
 };
- 
+
 export const useProductsByCategory = (category) => {
-  const { data, isLoading } = useQuery([category], getProductsByCategory);
-  return { data, isLoading };
+  return useQuery([category], getProductsByCategory);
 };
- 
+
 export const useProductById = (productId) => {
-  const { data, isLoading } = useQuery([productId], getProductById);
-  return { data, isLoading };
+  return useQuery([productId], getProductById);
 };
 
 export const useUserInfo = () => {
@@ -22,35 +28,35 @@ export const useUserInfo = () => {
     queryFn: getUserInfo,
     initialData: {},
   });
- };
- 
- export const useSignInWithEmailPassword = () => {
+};
+
+export const useSignInWithEmailPassword = () => {
   const queryClient = useQueryClient();
   return useMutation(login, {
     onSuccess: () => {
       queryClient.invalidateQueries(["uid"]);
     },
   });
- };
- 
- export const useRegisterWithEmailPassword = () => {
+};
+
+export const useRegisterWithEmailPassword = () => {
   const queryClient = useQueryClient();
   return useMutation(register, {
     onSuccess: () => {
       queryClient.invalidateQueries(["uid"]);
     },
   });
- };
+};
 
 export const useUpdateProfile = () => {
-const queryClient = useQueryClient();
-return useMutation(updateUserInfo, {
-  onSuccess: () => {
-    queryClient.invalidateQueries(["uid"]);
-  },
-});
+  const queryClient = useQueryClient();
+  return useMutation(updateUserInfo, {
+    onSuccess: () => {
+      queryClient.invalidateQueries(["uid"]);
+    },
+  });
 };
- 
+
 export const useLogout = () => {
   const queryClient = useQueryClient();
   return useMutation(logout, {
