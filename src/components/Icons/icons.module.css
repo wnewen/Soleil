@@ -1,0 +1,23 @@
+@media (min-width: 375px){
+    .icon {
+        font-size: 24px;
+        margin-right: 0.5rem;
+      }
+  }
+  @media (min-width: 760px){
+    .icon {
+        font-size: 24px;
+        margin-right: 0.5rem;
+      }
+  }
+  @media (min-width: 1100px){
+    .icon {
+        font-size: 32px;
+        margin-right: 0.5rem;
+      }
+}
+
+.icon:hover {
+    fill: aliceblue;
+    stroke: aliceblue;
+}

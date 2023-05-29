@@ -1,36 +1,44 @@
-
 @keyframes rotate {
-    from {
-      transform: rotate(180deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(180deg);
   }
-  @media (min-width: 375px){
-    .icon {
-        font-size: 20px;
-        margin-right: 1.5rem;
-      }
+  to {
+    transform: rotate(360deg);
   }
-  @media (min-width: 760px){
-    .icon {
-        font-size: 28px;
-        margin-right: 1.5rem;
-      }
-  }
-  @media (min-width: 1100px){
-    .icon {
-        font-size: 32px;
-        margin-right: 1.5rem;
-       
-      }
 }
+@media (min-width: 375px){
   .icon {
-    color: #412613;
-    animation-name: rotate;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-  }
+      font-size: 24px;
+      margin-right: 1.5rem;
+    }
+}
+@media (min-width: 760px){
+  .icon {
+      font-size: 28px;
+      margin-right: 1.5rem;
+    }
+}
+@media (min-width: 1100px){
+  .icon {
+      font-size: 32px;
+      margin-right: 1.5rem;
+      
+    }
+}
+.icon {
+  /* color: #412613; */
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.icon_darkMode{
+  color: #C8D7EB;
+}
+
+.icon:hover {
+  fill: aliceblue;
+  stroke: aliceblue;
+}
  

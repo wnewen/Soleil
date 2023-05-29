@@ -1,22 +1,3 @@
-@media (min-width: 375px){
-    .icon {
-        font-size: 16px;
-        margin-right: 1.5rem;
-      }
-  }
-  @media (min-width: 760px){
-    .icon {
-        font-size: 24px;
-        margin-right: 1.5rem;
-      }
-  }
-  @media (min-width: 1100px){
-    .icon {
-        font-size: 32px;
-        margin-right: 1.5rem;
-      }
-}
-
 .progressBar{
 
 }
@@ -24,10 +5,41 @@
 .inner_progressBar{
 
 }
+@media (min-width: 375px){
+    .icon {
+        font-size: 24px;
+        /* margin-right: 1.5rem; */
+    }
+}
+@media (min-width: 760px){
+    .icon {
+        font-size: 28px;
+        /* margin-right: 1.5rem; */
+    }
+}
+@media (min-width: 1100px){
+    .icon {
+        font-size: 32px;
+        /* margin-right: 1.5rem; */
+    }
+}
+
+.icon {
+/* color: #412613; */
+animation-name: rotate;
+animation-duration: 0.3s;
+animation-timing-function: ease-out;
+animation-fill-mode: forwards;
+margin-right: 0.5rem;
+}
+
+.icon_darkMode{
+color: #C8D7EB;
+}
 
 .icon:hover {
-    fill: aliceblue;
-    stroke: aliceblue;
+fill: aliceblue;
+stroke: aliceblue;
 }
 
 .cart_text {
@@ -46,21 +58,43 @@
     font-family: 'Montserrat';
     font-size: 1.5rem;
     margin-top: 2rem;
-    color: #412613;
+}
+
+.item_info{
+    width: 100%;
 }
 
 .item_image {
     width: 100%;
 }
 
+.item_title_box{
+    display: flex;
+    justify-content: space-between;
+}
+
 .item_name {
     font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.btn_delete{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.btn_delete:hover {
+    cursor: pointer;
 }
 
 .item_catogory {
     font-weight: 400;
-    font-size: 1rem;
-    margin-bottom: 15%;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
 .item_price {
@@ -69,21 +103,27 @@
 }
 
 .qty_box {
-    width: 100%;
+    width: 80%;
     height: 1.5rem;
-    border: #412613 solid 1px;
+    border: solid 1px;
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-left: 0.5rem;
 }
 
 .qty_button {
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-.btn_delete:hover {
-    cursor: pointer;
+.qty_button:hover {
+    border: none;
+}
+
+.btn_icon{
+    width: 10px;
 }
 
 .btn_clearCart {
@@ -97,7 +137,7 @@
     padding-top: 5%;
     display: flex;
     justify-content: space-between;
-    border-top: #412613 solid 1px;
+    border-top: solid 1px;
 }
 
 .subtotal_title {

@@ -7,8 +7,7 @@ import { theme } from "antd";
 import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
 import { motion } from "framer-motion";
-//import UserInfo from "../UserInfo";
-//import { BsPerson, BsHangbag} from 'react-icons/bs'
+import UserInfo from "../UserInfo";
 
 function Banner() {
     const lightMode = useSelector(selectLightMode);
@@ -46,14 +45,28 @@ function Banner() {
             </div>
             
             <div className={styles.header_position}>
-                <span className={styles.header}>
-                    <NavLink to="./"><img className={styles.icon} src="/images/icon_soleil.png" /></NavLink>
-                    <span className={styles.icon_right}>
-                        <SetColotMode />
-                        <CartSummary size={70} color="#412613" />
-                        <NavLink to="./"><img className={styles.icon} src="/images/icon_login.svg" /></NavLink>
-                    </span>
-                </span>
+                <div className={styles.header}>
+                    <NavLink to="./"><img className={styles.icon} src={lightMode ? "/images/icon_soleil.svg" : "/images/dark_mode_icon_soleil.svg"} /></NavLink>
+                    {lightMode
+                        ?(
+                            <div className={styles.icon_right}>
+                                <SetColotMode  color="#412613" />
+                                <CartSummary 
+                                    className={styles.icon}
+                                    color="#412613"/>
+                                <UserInfo color="#412613"/>
+                            </div>
+                        ) : (
+                            <div className={styles.icon_right}>
+                                <SetColotMode color="#C8D7EB" />
+                                <CartSummary 
+                                    className={styles.icon_darkMode} 
+                                    color="#C8D7EB"/>
+                                <UserInfo color="#C8D7EB" />
+                            </div>
+                        )
+                    }
+                </div>
             </div>
             <div className={styles.content}>
                 <div className={styles.banner_title}>

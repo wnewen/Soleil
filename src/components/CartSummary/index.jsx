@@ -2,11 +2,12 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Row, Col, Badge, Drawer, theme, Progress } from "antd";
 import styles from "./cartSummary.module.css";
-import CartIcon from "./Icons"
+import CartIcon from "../Icons"
 import { addCartItems, clearCart, removeCartItems, selectCarItems } from "../../redux/cartSlice";
+import { selectLightMode } from "../../redux/colorSlice";
+import { BsHandbag } from "react-icons/bs";
 
-
-function CartSummary() {
+function CartSummary( color ) {
 
     //const { token: { colorTextBase }} = theme/useToken();
     // const toggleCart = () => setIsOpen(!isOpen);
@@ -24,12 +25,22 @@ function CartSummary() {
     const freeShippingText = "You’ve qualified for FREE shipping";
     let drawerTitle = totalPrice > 35 ? freeShippingText : shippingText;
 
+    //icon color in lightMode or darkMode 
+    const lightMode = useSelector(selectLightMode);
     return (
         <>
             <nav onClick={() => setOpen(true)}>
-                <Badge count={count} color="#29231f">
-                  <CartIcon />
-                </Badge>
+                {lightMode
+                    ?(
+                        <Badge count={count} color="#29231f">
+                            <BsHandbag className={styles.icon}  color={color.color}/>
+                        </Badge>
+                    ) : (
+                        <Badge count={count} color="#C8D7EB">
+                            <BsHandbag className={styles.icon} color={color.color}/>
+                        </Badge>
+                    )
+                }
             </nav>
             <Drawer
                 title={drawerTitle}
@@ -37,7 +48,7 @@ function CartSummary() {
                 onClose={() => setOpen(false)}
                 progressBar={drawerTitle}
             > 
-            <Progress percent={(totalPrice/35)*100} showInfo={false}  strokeColor= { totalPrice > 35 ? "#29231f" : "#EFEDE9"}/>
+            <Progress percent={(totalPrice/35)*100} showInfo={false}  strokeColor= { totalPrice > 35 ? "#29231f" : "#8592A2"}/>
                 {
                     
                     cartItems.length === 0 ? (
@@ -54,7 +65,9 @@ function CartSummary() {
 
                                 <Row key={item.id} className={styles.row}>
                                     <Col
-                                        lg={{ span: 11 }}
+                                        xs={{span: 10}}
+                                        sm={{span: 10}}
+                                        lg={{ span: 10 }}
                                     >
                                         <img
                                             alt="item image"
@@ -63,10 +76,16 @@ function CartSummary() {
                                         />
                                     </Col>
                                     <Col
-                                        lg={{ span: 12 }}
+                                        xs={{span: 14}}
+                                        sm={{span: 14}}
+                                        lg={{ span: 14 }}
                                         className={styles.item_info}
                                     >
-                                        <h6 className={styles.item_name}>{(item.name)}</h6>
+                                        <div className={styles.item_title_box}>
+                                            <h6 className={styles.item_name}>{(item.name)}</h6>
+                                            <h6 className={styles.btn_delete} onClick={() => dispatch(removeCartItems(item.id))}>x</h6>
+                                        </div>
+                                        
                                         <h6 className={styles.item_catogory}>{item.category}</h6>
                                         <h6 className={styles.item_price}>${item.price}</h6>
                                         <div className={styles.qty_box}>
@@ -82,7 +101,9 @@ function CartSummary() {
                                                 }))
                                             }
                                                 
-                                            }}>-</button>
+                                            }}>
+                                                <img className={styles.btn_icon} src={lightMode ? "/images/icon_minus.png" : "/images/dark_mode_icon_minus.png"} />
+                                            </button>
                                             <span>{item.qty}</span>
                                             <button className={styles.qty_button} onClick={() => {if(item.qty<item.countInStock){
                                                 dispatch(addCartItems({
@@ -96,11 +117,13 @@ function CartSummary() {
                                                 }))
                                             }
                                                 
-                                            }}>+</button>
+                                            }}>
+                                                <img className={styles.btn_icon} src={lightMode ? "/images/icon_plus.png" : "/images/dark_mode_icon_plus.png"} />
+                                            </button>
                                         </div>
                                     </Col>
-                                    <Col className={styles.btn_delete} onClick={() => dispatch(removeCartItems(item.id))}>x
-                                    </Col>
+                                    {/* <Col className={styles.btn_delete} onClick={() => dispatch(removeCartItems(item.id))}>x
+                                    </Col> */}
                                 </Row>
 
 

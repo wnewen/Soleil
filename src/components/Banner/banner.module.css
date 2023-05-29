@@ -52,8 +52,8 @@
     }
     .nav_position {
         position: absolute;
-        top: -50rem;
-        right: -15rem;
+        top: -32rem;
+        right: 4rem;
         width: 200px;
         text-align: left; 
         
@@ -94,10 +94,11 @@
         display: flex;
         align-items: flex-end;
         flex-direction:column;
-        top: -19rem;
-        left: -16rem;
+        top: -46rem;
+        left: -20rem;
         padding-top: 0;
-        margin-right: 50rem;
+        margin-right: 0rem;
+        width: 40%;
     }
     .t1{
        
