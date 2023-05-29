@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 import { motion} from "framer-motion";
 
 function Navigation({ open, onClose }) {
+    <div>
+        
+    </div>
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
