@@ -24,18 +24,20 @@ function ProductList({ products, isLoading }) {
             </Skeleton>
             <Row gutter={[32, 32]}>
                 {products.map(product => (
-                    <Col
-                        key={product.id}
-                        sm={{ span: 12 }}
-                        lg={{ span: 8 }}
-                        xl={{ span: 8 }}
-                        xxl={{ span: 8 }}
-                    >
-                        <Skeleton loading={isLoading} avatar active>
-                            <ProductItem product={product} />
-                        </Skeleton> 
-                        
-                    </Col>
+                    <Skeleton loading={isLoading} avatar active>
+                        <Col
+                            key={product.id}
+                            sm={{ span: 12 }}
+                            lg={{ span: 8 }}
+                            xl={{ span: 8 }}
+                            xxl={{ span: 8 }}
+                        >
+                            
+                                <ProductItem product={product} />
+                            
+                            
+                        </Col>
+                    </Skeleton> 
                 ))}
             </Row>
         </div >
