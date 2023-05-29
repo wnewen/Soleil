@@ -22,8 +22,10 @@
     "react-redux": "^8.0.5",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^6.9.0",
+    "react-scroll-parallax": "^3.4.2",
     "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.4.2"
+    "redux-thunk": "^2.4.2",
+    "rellax": "^1.12.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

@@ -3,19 +3,23 @@ import TitleItem from "../TitleItem"
 import title from "../json/title.json"
 import { NavLink } from "react-router-dom";
 import { theme } from 'antd';
+// import { Rellax } from 'rellax';
 
 function News() {
+    // var rellax = new Rellax('.rellax');
     const {
         token: { colorBgBase, colorTextBase },
     } = theme.useToken();
     return (
-        <div 
+       
+           <div 
             className={styles.box}
             style={{
                 backgroundColor: colorBgBase,
                 color: colorTextBase
             }}
         >
+         
             <TitleItem
                 title1={title[0].id}
                 title2={title[0].catergory}
@@ -28,6 +32,9 @@ function News() {
                     — B.B. King, Musician
                 </p>
 
+                {/* <div class="rellax" data-rellax-speed="-3">
+                I’m slow and smooth
+                </div> */}
 
                 <NavLink 
                     to="/news" 
@@ -45,8 +52,9 @@ function News() {
                 
             </div>
 
-
         </div>
+     
+        
     );
 }
 export default News;

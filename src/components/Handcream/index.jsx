@@ -22,7 +22,7 @@ function Handcream(){
                 product="handcream"
             />
             <div className={styles.content}>
-            <img className={styles.h_img} src="./images/img_handCream.svg"/>
+            <img className={styles.h_img} src="./images/img_handCream.jpeg"/>
             <p className={styles.text}>Tamburins</p>
             </div>
        
