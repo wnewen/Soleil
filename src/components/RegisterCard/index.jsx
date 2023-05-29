@@ -44,7 +44,7 @@ const RegisterCard = ({ redirect }) => {
           },
         ]}
       >
-        <Input />
+        <Input className={styles.from_input}/>
       </Form.Item>
       <Form.Item
         name="email"
@@ -59,8 +59,9 @@ const RegisterCard = ({ redirect }) => {
             message: "Please input your E-mail!",
           },
         ]}
+        className={styles.form_item}
       >
-        <Input />
+        <Input className={styles.from_input}/>
       </Form.Item>
 
       <Form.Item
@@ -73,8 +74,9 @@ const RegisterCard = ({ redirect }) => {
           },
         ]}
         hasFeedback
+        className={styles.form_item}
       >
-        <Input.Password />
+        <Input.Password className={styles.from_input}/>
       </Form.Item>
 
       <Form.Item
@@ -99,8 +101,9 @@ const RegisterCard = ({ redirect }) => {
             },
           }),
         ]}
+        className={styles.form_item}
       >
-        <Input.Password />
+        <Input.Password className={styles.from_input}/>
       </Form.Item>
 
       <Form.Item
@@ -114,12 +117,13 @@ const RegisterCard = ({ redirect }) => {
                 : Promise.reject(new Error("Should accept agreement")),
           },
         ]}
+        className={styles.form_item}
       >
         <Checkbox>
           I have read the <Link to={"/"}>agreement</Link>
         </Checkbox>
       </Form.Item>
-      <Form.Item>
+      <Form.Item className={styles.form_item}>
         {isLoading ? (
           <Button
             type="primary"

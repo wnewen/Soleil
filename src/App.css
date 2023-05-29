@@ -50,6 +50,7 @@
   .container {
     /* width: 540px; */
     width: 100%;
+    min-height: 36rem;
   }
 } 
 
