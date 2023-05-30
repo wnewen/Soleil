@@ -8,8 +8,10 @@ import { useSelector } from "react-redux";
 import { selectLightMode } from "../../redux/colorSlice";
 import { motion } from "framer-motion";
 import UserInfo from "../UserInfo";
+import Navigation from "../Navigation";
 
 function Banner() {
+    const [isOnTouch, setIsOnTouch] = useState(false);
     const lightMode = useSelector(selectLightMode);
     const {
         token: { colorBgBase, colorTextBase },
@@ -47,6 +49,7 @@ function Banner() {
             <div className={styles.header_position}>
                 <div className={styles.header}>
                     <NavLink to="./"><img className={styles.icon} src={lightMode ? "/images/icon_soleil.svg" : "/images/dark_mode_icon_soleil.svg"} /></NavLink>
+                   
                     {lightMode
                         ? (
                             <div className={styles.icon_right}>

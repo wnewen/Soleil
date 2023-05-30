@@ -21,13 +21,22 @@
 }
 
 .header {
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    width: 100%;
+
+    color: #A8B7CA;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    height: 7.35rem;
 }
 
 
 .nav_position {
-    position: absolute;
+    
     top: -45rem;
     right: -25rem;
 

@@ -22,9 +22,9 @@ function Manicure() {
             />
             <Row gutter={[32, 32]}>
                 <Col span={12} className={styles.left}>
-                    <img src="./images/img_manicure_lumiere.svg" className={styles.img} />
+                    <img src="./images/img_manicure_lumiere.svg" className={styles.img1} />
                     <div className={styles.ohora_text}>
-                        <p className={styles.text1}>ohora</p>
+                        <p className={styles.text3}>ohora</p>
                         <div className={styles.p1}>
                             <p className={styles.text2}>A Korea nail brand</p>
                             <p className={styles.text2}>Provided thousands of different nails </p>
@@ -40,7 +40,7 @@ function Manicure() {
                             <p className={styles.text2}>100% handmade</p>
                         </div>
                     </div>
-                    <img src="./images/img_manicure_ohora.svg" className={styles.img} />
+                    <img src="./images/img_manicure_ohora.svg" className={styles.img2} />
 
                 </Col>
             </Row>

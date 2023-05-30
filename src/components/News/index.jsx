@@ -3,6 +3,7 @@ import TitleItem from "../TitleItem"
 import title from "../json/title.json"
 import { NavLink } from "react-router-dom";
 import { theme } from 'antd';
+import FadeInDiv from '../MotionDiv'
 // import { Rellax } from 'rellax';
 
 function News() {
@@ -26,11 +27,13 @@ function News() {
                 product="news"
             />
             <div className={styles.content}>
-
-                <p className={styles.saying}>
+            <FadeInDiv>
+            <p className={styles.saying}>
                     “The beautiful thing about learning is nobody can take it away from you.”
                     — B.B. King, Musician
                 </p>
+            </FadeInDiv>
+               
 
                 {/* <div class="rellax" data-rellax-speed="-3">
                 I’m slow and smooth
