@@ -26,13 +26,14 @@ function News() {
                 title2={title[0].catergory}
                 product="news"
             />
+    
             <div className={styles.content}>
-            <FadeInDiv>
+         
             <p className={styles.saying}>
                     “The beautiful thing about learning is nobody can take it away from you.”
                     — B.B. King, Musician
                 </p>
-            </FadeInDiv>
+          
                
 
                 {/* <div class="rellax" data-rellax-speed="-3">
@@ -54,6 +55,7 @@ function News() {
 
                 
             </div>
+           
 
         </div>
      
